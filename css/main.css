@@ -65,7 +65,151 @@ Table of Contents
 **8** media rules
 */
 /**0** fonts, colors, spacing */
+/* dracula ui colors */
+:root {
+    --black: #21222c;
+    --blackSecondary: #414558;
+    --disabled: #6c7393;
+    --greySecondary: #626784;
+    --greyTernary: #b6b9c9;
+    --white: #f8f8f2;
+    --cyan: #80ffea;
+    --green: #8aff80;
+    --orange: #ffca80;
+    --pink: #ff80bf;
+    --purple: #9580ff;
+    --purpleSecondary: #d4ccff;
+    --red: #ff9580;
+    --yellow: #ffff80;
+    --cyan-transparent: rgba(128,255,234,.1);
+    --green-transparent: rgba(138,255,128,.1);
+    --orange-transparent: rgba(255,202,128,.1);
+    --orange-nontransparent: #383435;
+    --pink-transparent: rgba(255,128,191,.1);
+    --pink-nontransparent: #382C3B;
+    --purple-transparent: rgba(149,128,255,.1);
+    --red-transparent: rgba(255,149,128,.1);
+    --yellow-transparent: rgba(255,255,128,.1);
+    --purple-300: rgba(149,128,255,.3);
+    --purple-400: rgba(149,128,255,.4);
+    --purple-500: rgba(149,128,255,.5);
+    --purple-600: rgba(149,128,255,.6);
+    --purple-700: rgba(149,128,255,.7);
+    --purple-800: rgba(149,128,255,.8);
+    --purple-900: rgba(149,128,255,.9);
+    --gradientDegree: 135deg;
+    --purple-pink: linear-gradient(var(--gradientDegree),var(--purple) 0%,var(--pink) 100%);
+    --cyan-purple: linear-gradient(var(--gradientDegree),var(--cyan) 0%,var(--purple) 100%);
+    --pink-yellow: linear-gradient(var(--gradientDegree),var(--pink) 0%,var(--yellow) 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+:root {
+    --font-ao3-serif: Georgia, serif;
+    --font-monospace: 'IBM Plex Mono', "Courier New", Courier, monospace;    
+	--font-data: var(--font-monospace);
+    --font-sans-serif: 'IBM Plex Sans', 'DejaVu Sans', 'Helvetica Neue', 'Trebuchet MS', Helvetica, sans-serif;
+	--font-service: var(--font-sans-serif);
+	--font-title: var(--font-ao3-serif);
+	--font-work: var(--font-sans-serif);
+	--font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-xxl: 1.75rem;
+    --font-w-l: 300;
+    --font-w-sb: 600;
+	
+    --background-main: var(--black);
+	--background-card: #282a36; 
+	--background-secondary: #333540; 
+	--background-selection: #44475A;
+    --hover: rgba(255, 255, 255, .09);    
+	--hover-opaque: #35363F;
+    --background-button: var(--orange-transparent);
+    --background-button-opaque: var(--orange-nontransparent);
+    --background-button-focus: var(--background-button-opaque);
+    --background-tag: var(--blackSecondary);
+    --background-disabled: var(--background-main);
+    --background-disabled-opaque: var(--background-main);
+    --background-dropdown: var(--hover-opaque);
+    --background-input: #282a36;
+    --background-accent: var(--purple-transparent);
+    --background-accent-opaque: #2C2B40;
+    --background-approve: var(--green-transparent);
+    --background-notice: var(--cyan-transparent);
+    --background-error: #382E35;
+    --background-caution: #383935;
+    --background-collections: rgba(97, 108, 144, .5); 
 
+    --accent: var(--purple);
+	--accent-900: var(--purple-900);
+	--accent-800: var(--purple-800);
+	--accent-700: var(--purple-700);
+	--accent-600: var(--purple-600);
+	--accent-500: var(--purple-500);
+	--accent-400: var(--purple-400);
+	--accent-300: var(--purple-300);	
+        
+    --border-card: var(--background-card);
+    --border-interactive-card: var(--blackSecondary);
+    --border-alt: #4c5067;
+    --border-blockquote: var(--orange);
+    --border-purple-pink: var(--purple-pink) 30 stretch; 
+    --border-cyan-purple: var(--cyan-purple) 30 stretch; 
+    --border-pink-yellow: var(--pink-yellow) 30 stretch; 
+	--border-include: var(--green);
+    --border-exclude: var(--red);
+    --border-checkbox: var(--greySecondary);
+    --border-radio: var(--border-checkbox);
+    --border-accent-gradient: var(--border-purple-pink);
+    --border-width: 0.125em;
+
+    --text-main: var(--white);
+    --text-tab-inactive: var(--text-main);
+    --text-tab-hover: var(--text-main);
+	--text-tab-current: var(--pink);
+    --text-button: var(--orange);
+    --text-button-hover: var(--text-main);
+    --text-button-focus: var(--text-button);
+    --text-button-accent: var(--purpleSecondary);
+    --text-disabled: var(--disabled);
+    --text-notice: var(--cyan);
+	--text-required: var(--orange);
+    --text-approve: var(--green);
+    --error: var(--red);
+    --caution: var(--yellow);
+    --link: var(--purpleSecondary);
+    --link-hover: var(--text-main);
+    --link-visited: var(--greyTernary);
+    --link-visited-hover: var(--text-main);
+    --link-accent-visited: var(--text-button-accent);
+
+	--rounded: .25rem;
+	--rounded-lg: 0.5rem;
+	--spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-4-5: 1.125rem;
+    --nspacing-4: -1rem;
+    --nspacing-4-5: -1.125rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --nspacing-6: -1.5rem;
+    --spacing-7: 1.75rem;
+    --spacing-8: 2rem;
+    --mp-xss: .25em;
+    --mp-xs: .5em;
+    --mp-sm: .75em;
+    --mp-m: 1em;
+    --mp-lg: 1.5em;     
+    --padding-button-xs: 0 var(--spacing-1);
+    --padding-button-sm: 0 var(--spacing-2);
+    --padding-button-md: 0.25em var(--spacing-2);
+    --padding-button-lg: var(--spacing-1) var(--spacing-3);
+}
 /**1** common rules (default skin overhaul) */
 /*
 *< background */
