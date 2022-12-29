@@ -213,28 +213,82 @@ Table of Contents
 /**1** common rules (default skin overhaul) */
 /*
 *< background */
+body, table, thead td, thead tr:hover, thead td:hover, thead th:hover, thead tr:hover th, col.name, #dashboard a:hover, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, fieldset fieldset, .toggled form, .dynamic form, .ui-sortable li, /* хто ты */ .ui-sortable li:hover, #ui-datepicker-div, .ui-datepicker table, #modal, form.verbose legend, .verbose form legend, dl.index dd, .listbox, fieldset fieldset.listbox, .listbox > .heading, .removeme fieldset .heading, .item dl.visibility, /* хто ты */ .expandable.secondary, #dashboard .expandable.secondary, .splash .module div.account, #tos_prompt, #tos_prompt .heading, .filters .indicator:before, input[type="checkbox"]:focus, input[type="radio"]:focus,
+.nomination dt, .child, .actions span.defaulted, .actions label {
+	background: var(--background-main);
+	color: var(--text-main);
+	box-shadow: none;
+}
+#dashboard .current {
+    background: var(--background-main);
+}
 /*
 *< cards */
+li.blurb, .splash .news li, .splash .news li:last-of-type, .unread, .notice, .comment_notice, .kudos_notice, .announcement .userstuff, #outer .reading h4.viewed, .reading h4.viewed,/* to-do non-transparent? */ ul.notes, .alert .userstuff, .caution, #proxy-notice, p.required, .alert.flash, .comment_error, .kudos_error, .event .userstuff, .error,  .LV_invalid, .dashboard .own, .comment span.unreviewed, li.comment {
+    background: var(--background-main);
+    border: var(--border-width) solid var(--background-main);
+	border-radius: var(--rounded);
+}
 /*
 *<< main */
+.splash .favorite li:nth-of-type(odd) a, .dashboard .own, dl.meta, li.blurb, .splash .news li, .splash .news li:last-of-type, dl.work.meta.group, li.comment {
+    background-color: var(--background-card);
+    border-color: var(--border-card);
+	border-radius: var(--rounded);
+}
 /*
 *<< accent */
+li.unread.comment, #outer .reading h4.viewed, .reading h4.viewed, .dashboard .bookmark .user.own.module, .bookmark .user.own.module {
+	background-color: var(--background-accent);
+    border: 0;
+}
 /*
 *<< secondary */
+.bookmark .user.blurb, .bookmark .user.module, form blockquote.userstuff, .statistics .index li:nth-of-type(even), .thread .even, .blurb .blurb, .system .tweet_list li, .draft, .draft .wrapper, #dashboard .secondary, .secondary {
+	background-color: var(--background-secondary);
+    border-color: var(--background-secondary);
+}
 /*
 *<< notifications  */
 /*
 *<<< normal  */
+.notice, .comment_notice, .kudos_notice, .announcement .userstuff, /* to-do non-transparent? */ ul.notes {
+	background-color: var(--background-notice);
+	border: 0;
+	color: var(--text-notice);
+}
 /*
 *<<< caution */
+.alert .userstuff, .caution {
+    background-color: var(--background-caution);   	
+    color: var(--caution);
+	border: 0;
+}
 /*
 *<<< error  */
+#proxy-notice, p.required, .alert.flash, .comment_error, .kudos_error, .event .userstuff, .error,  .LV_invalid {
+	background-color: var(--background-error);
+	color: var(--error);
+	border: 0;
+}
+.LV_invalid:before { border-color: var(--background-error) transparent }
+form.verbose legend.required, .required { 	color: var(--error) }
 /*
 *< color */
 /*
 *< links */
 /*
 *< accent */
+#footer, .own, .draft, .draft .wrapper, .unread, .unwrangled, .unreviewed, #header .primary {	background: var(--background-accent) }
+span.unread {
+    color: black;
+    text-transform: uppercase;
+    border-color: var(--accent);
+    background-color: var(--accent);
+}
+.actions .reindex a, #greeting .icon, #dashboard, #dashboard.own {
+    border-color: var(--accent)
+}
 /*
 *< no border */
 /*
@@ -263,6 +317,13 @@ Table of Contents
 *< tabs */
 /*
 *< dropdown */
+#header .open a,
+#header .menu, #small_login, .autocomplete div.dropdown ul, .autocomplete .notice, .dropdown,
+/*<< tooltip */
+.qtip-content, .search [role="tooltip"] {
+	background: var(--background-dropdown);
+	border-color: var(--background-dropdown);
+}
 /*
 *<< tooltip */
 /*
@@ -273,6 +334,14 @@ Table of Contents
 *< buttons */
 /*
 *<< hover */
+#header .actions a:hover, #header .actions a:focus, #header .dropdown:hover > a, #header .dropdown a:hover, #header .dropdown .menu a:hover, #header .dropdown .menu a:focus, #header #search .button:hover, .autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected, .ui-datepicker tr:hover, .ui-datepicker td:hover,
+.splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus, .question a:hover, .actions a:hover, .actions input[type="submit"]:hover, .heading .actions a:hover, .heading span.actions a:hover, a.action:hover, .action:link:hover, .action a:link:hover, .action a:hover, .navigation a:hover, .submit a:hover, input[type="submit"]:hover, button:hover, .announcement input[type="submit"]:hover, .announcement .action:hover, span.question:hover,  tr:hover, td:hover, tbody th:hover, #dashboard a:hover, .filters .footnote a:hover, span.delete a:hover, #ui-datepicker-div a.ui-datepicker-prev.ui-corner-all:hover, #ui-datepicker-div a.ui-datepicker-next.ui-corner-all:hover, .tags a[data-remote="true"]:hover, #show_signups:hover, #hide_signups:hover, #modal.img .footer, #login .open a:hover {
+    background: var(--hover);
+	color: var(--text-main);
+	border-color: var(--hover-opaque);
+	box-shadow: none;
+}
+.announcement input[type="submit"]:hover, .announcement .action:hover { background: var(--dropdown) }
 /*
 *<< arrow buttons */
 /*
@@ -283,8 +352,15 @@ Table of Contents
 *<< tags */
 /*
 *<< pairings */
+li.relationships a {
+    background: var(--background-tag);
+}
 /*
 *< input fields */
+input[type="text"], textarea, input[type="password"], input[type="email"], form.search input[type="text"], .actions input[type="text"], textarea:focus {
+    background: var(--background-input);
+    border-color: var(--background-input);
+}
 /*
 *< checkbox, radio */
 /**4** forms */
