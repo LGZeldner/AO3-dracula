@@ -418,5 +418,11 @@ input[type="text"], textarea, input[type="password"], input[type="email"], form.
 /*
 *< news */
 /**7** visited links */
-
+a:visited, .listbox .heading a:visited, .splash .favorite li a:visited, .announcement .userstuff a:visited, .splash .favorite li:nth-of-type(odd) a:visited { color: var(--link-visited) }
+a:visited:hover, .blurb h4 a:visited:hover, .listbox .heading a:visited:hover, .announcement .userstuff a:focus, .announcement .userstuff a:visited:hover, .splash .favorite li a:visited:hover, .splash .favorite li:nth-of-type(odd) a:visited:hover {
+    text-decoration: none;
+    color: var(--link-visited-hover);
+}
+.actions a:visited, .action a:visited, .action:visited, span.action a:visited, .listbox .heading span.action a:visited, .pagination.actions a:visited { color: var(--text-button) }
+a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker td a:visited, .ui-datepicker td a:visited:hover, a.tag:visited, a.tag:visited:hover, .action:visited:hover, .action a:visited:hover, .actions a:visited:hover, .listbox .heading span.action a:visited:hover, span.action a:visited:hover, span.action:hover, span.action:hover a:visited, .heading a.tag:visited, .heading a.tag:visited:hover { color: var(--text-main) }
 /**8** media rules */
