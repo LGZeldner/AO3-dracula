@@ -275,8 +275,25 @@ li.unread.comment, #outer .reading h4.viewed, .reading h4.viewed, .dashboard .bo
 form.verbose legend.required, .required { 	color: var(--error) }
 /*
 *< color */
+#header a, #header a:visited, #header .primary a, #header .primary .open a, #header .primary .menu a, #header .primary .dropdown:hover a, #header .primary .dropdown a:focus, #header h2, #header #search input:focus, #header .search, #footer a, #footer, #footer .heading, #modal.img a, .delete a, .delete a:hover, .top:hover a, .listbox > .heading, .filters .expander, .question a:hover, #dashboard a, #dashboard span, .action, .action:hover, label.action:hover, li.action:hover, .autocomplete div.dropdown ul, .autocomplete .notice, .required .autocomplete, .post .required .warnings, dd.required, form dd.required, .userstuff h2 { color: var(--text-main) }
 /*
 *< links */
+a, a:link, .bookmark .count a, .event .userstuff a, .announcement .userstuff a, .announcement .userstuff a:link,  span.symbol, #footer a {
+    color: var(--link);
+    border-bottom: 0;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    /* ! split for skin */
+}
+a:hover, a:focus, .bookmark .count a:hover, .bookmark .count a:focus, .event .userstuff a:hover, .event .userstuff a:focus, .announcement .userstuff a:hover, span.symbol:hover, span.symbol:focus, #footer a:hover, #footer a:focus { color: var(--link-hover) }
+a.cloud7 { color: var(--accent-900) }
+a.cloud6 { color: var(--accent-800) }
+a.cloud5 { color: var(--accent-700) }
+a.cloud4 { color: var(--accent-600) }
+a.cloud3 { color: var(--accent-500) }
+a.cloud2 { color: var(--accent-400) }
+a.cloud1 { color: var(--accent-300) }
 /*
 *< accent */
 #footer, .own, .draft, .draft .wrapper, .unread, .unwrangled, .unreviewed, #header .primary {	background: var(--background-accent) }
@@ -286,9 +303,9 @@ span.unread {
     border-color: var(--accent);
     background-color: var(--accent);
 }
-.actions .reindex a, #greeting .icon, #dashboard, #dashboard.own {
-    border-color: var(--accent)
-}
+/* accent color from header */
+#header #greeting img, #header .heading a, #header .heading a:visited, #header form, .draggable, .droppable, span.requested, a.work, .blurb h4 a:link, .blurb h4 img, .splash .module h3, .splash .browse li a:before, a.cloud8, #tos_prompt .heading { color: var(--accent) }
+.actions .reindex a, #greeting .icon, #dashboard, #dashboard.own { border-color: var(--accent) }
 /*
 *< no border */
 /*
@@ -401,4 +418,5 @@ input[type="text"], textarea, input[type="password"], input[type="email"], form.
 /*
 *< news */
 /**7** visited links */
+
 /**8** media rules */
