@@ -213,18 +213,21 @@ Table of Contents
 /**1** common rules (default skin overhaul) */
 /*
 *< background */
-body, table, thead td, thead tr:hover, thead td:hover, thead th:hover, thead tr:hover th, col.name, #dashboard a:hover, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, fieldset fieldset, .toggled form, .dynamic form, .ui-sortable li, /* хто ты */ .ui-sortable li:hover, #ui-datepicker-div, .ui-datepicker table, #modal, form.verbose legend, .verbose form legend, dl.index dd, .listbox, fieldset fieldset.listbox, .listbox > .heading, .removeme fieldset .heading, .item dl.visibility, /* хто ты */ .expandable.secondary, #dashboard .expandable.secondary, .splash .module div.account, #tos_prompt, #tos_prompt .heading, .filters .indicator:before, input[type="checkbox"]:focus, input[type="radio"]:focus,
-.nomination dt, .child, .actions span.defaulted, .actions label {
+body, table, thead td, thead tr:hover, thead td:hover, thead th:hover, thead tr:hover th, col.name, #dashboard a:hover, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, fieldset fieldset, .toggled form, .dynamic form, 
+.ui-sortable li, /* ? хто ты */ 
+.ui-sortable li:hover, 
+#ui-datepicker-div, .ui-datepicker table, #modal, form.verbose legend, .verbose form legend, dl.index dd, .listbox, fieldset fieldset.listbox, .listbox > .heading, .removeme fieldset .heading, 
+.item dl.visibility, /* ? хто ты */ 
+.expandable.secondary, #dashboard .expandable.secondary, .splash .module div.account, #tos_prompt, #tos_prompt .heading, .filters .indicator:before, input[type="checkbox"]:focus, input[type="radio"]:focus, .nomination dt, .child, .actions span.defaulted, .actions label {
 	background: var(--background-main);
 	color: var(--text-main);
 	box-shadow: none;
 }
-#dashboard .current {
-    background: var(--background-main);
-}
+.action, label.action:hover, div.dynamic, .listbox .index, th, .question a:hover, span.action, #dashboard .current, .chapter .preface, .comment h4.byline, .blurb .bookmark.listbox, .blurb .series.listbox, .blurb .work.listbox, .bookmark.listbox > .heading, .series.listbox > .heading, .work.listbox > .heading { background: none }
+::selection { background-color: var(--background-selection) }
 /*
 *< cards */
-li.blurb, .splash .news li, .splash .news li:last-of-type, .unread, .notice, .comment_notice, .kudos_notice, .announcement .userstuff, #outer .reading h4.viewed, .reading h4.viewed,/* to-do non-transparent? */ ul.notes, .alert .userstuff, .caution, #proxy-notice, p.required, .alert.flash, .comment_error, .kudos_error, .event .userstuff, .error,  .LV_invalid, .dashboard .own, .comment span.unreviewed, li.comment {
+li.blurb, .splash .news li, .splash .news li:last-of-type, .unread, .notice, .comment_notice, .kudos_notice, .announcement .userstuff, #outer .reading h4.viewed, .reading h4.viewed, ul.notes, .alert .userstuff, .caution, #proxy-notice, p.required, .alert.flash, .comment_error, .kudos_error, .event .userstuff, .error,  .LV_invalid, .dashboard .own, .comment span.unreviewed, li.comment {
     background: var(--background-main);
     border: var(--border-width) solid var(--background-main);
 	border-radius: var(--rounded);
@@ -252,11 +255,12 @@ li.unread.comment, #outer .reading h4.viewed, .reading h4.viewed, .dashboard .bo
 *<< notifications  */
 /*
 *<<< normal  */
-.notice, .comment_notice, .kudos_notice, .announcement .userstuff, /* to-do non-transparent? */ ul.notes {
+.notice, .comment_notice, .kudos_notice, .announcement .userstuff,  ul.notes {
 	background-color: var(--background-notice);
 	border: 0;
 	color: var(--text-notice);
 }
+ul.actions + .notice { margin-right: 0.25em }
 /*
 *<<< caution */
 .alert .userstuff, .caution {
@@ -284,7 +288,7 @@ a, a:link, .bookmark .count a, .event .userstuff a, .announcement .userstuff a, 
     -webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
-    /* ! split for skin */
+    /* TODO split for skin */
 }
 a:hover, a:focus, .bookmark .count a:hover, .bookmark .count a:focus, .event .userstuff a:hover, .event .userstuff a:focus, .announcement .userstuff a:hover, span.symbol:hover, span.symbol:focus, #footer a:hover, #footer a:focus { color: var(--link-hover) }
 a.cloud7 { color: var(--accent-900) }
@@ -332,6 +336,28 @@ span.unread {
 /**3** interactive */
 /*
 *< tabs */
+/* vertical in sidebar */
+#dashboard a { 	color: var(--text-tab-inactive) }
+#dashboard a:hover {
+	color: var(--text-tab-hover);
+	border-radius: var(--rounded) 0 0 var(--rounded);
+}
+#dashboard .current {
+	color: var(--text-tab-current);
+	border-right: var(--border-width) solid var(--text-tab-current);
+	border-radius: 0;
+}
+#dashboard ul.navigation.actions li a {
+	border-right: 1px solid var(--border-alt);
+	border-radius: 0;
+}
+/* active horizontal */
+.actions a.current, .actions a:link.current, .current, a.current, a:link.current, .current a:visited {
+	color: var(--text-button-focus);
+	background: var(--background-main);
+	border-color: var(--background-main);
+	border: 0.1rem solid var(--background-main);
+}
 /*
 *< dropdown */
 #header .open a,
