@@ -417,12 +417,33 @@ label.action > a {
 	box-shadow: none;
 }
 .announcement input[type="submit"]:hover, .announcement .action:hover { background: var(--dropdown) }
+.concise label.action { padding-top: 0 }
+.concise label.action a { vertical-align: middle }
 /*
 *<< arrow buttons */
+.heading .actions, .heading .action, .heading span.actions, span.action {
+	padding: 0;
+	vertical-align: top;
+}
+.heading .actions a, .heading .action a, .heading span.actions a, span.action a:link, span.action a {
+	border: 1px solid var(--background-button-opaque);
+	display: inline-block;
+	color: var(--text-button);
+	padding: var(--padding-button-xs);
+	margin: 0;
+}
+span.action a:only-child { margin-right: var(--spacing-1) }
+span.action a:hover, span.action:hover a {
+	border-color: var(--hover-opaque);
+	color: var(--text-main);
+}
 /*
 *<< rss */
 /*
-*<< help */
+*<< help, cancel */
+span.question, span.actions.cancel a, span.delete a { border-radius: var(--rounded-lg) }
+span.delete a { padding: var(--padding-button-sm) }
+span.actions.cancel, span.symbol span { padding: 0 }
 /*
 *<< tags */
 /*
