@@ -446,10 +446,31 @@ span.delete a { padding: var(--padding-button-sm) }
 span.actions.cancel, span.symbol span { padding: 0 }
 /*
 *<< tags */
+a.tag {
+    color: var(--white);
+    padding: 0 var(--spacing-1);
+    border-radius: var(--spacing-1);
+}
+.tags a[data-remote="true"] { padding: var(--padding-button-xs) }
+.commas li:after { color: transparent }
+a.tag:hover, .listbox .heading a.tag:visited:hover {
+    background: var(--hover);
+    color: var(--text-main);
+    border: 0;    
+}
 /*
 *<< pairings */
+li.relationships { border-radius: 0 }
 li.relationships a {
     background: var(--background-tag);
+    padding: var(--padding-button-xs);
+    border-radius: var(--rounded);
+    border-style: solid;
+    border-bottom-color: transparent;
+    border-bottom-color: var(--hover);
+}
+#outer .reading h4.viewed, .reading h4.viewed {
+    padding: var(--padding-button-lg);
 }
 /*
 *< input fields */
