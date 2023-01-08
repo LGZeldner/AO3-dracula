@@ -362,13 +362,12 @@ span.unread {
 *< dropdown */
 #header .open a,
 #header .menu, #small_login, .autocomplete div.dropdown ul, .autocomplete .notice, .dropdown,
-/*<< tooltip */
+/*
+*<< tooltip */
 .qtip-content, .search [role="tooltip"] {
 	background: var(--background-dropdown);
 	border-color: var(--background-dropdown);
 }
-/*
-*<< tooltip */
 /*
 *<< calendar */
 /*
@@ -475,9 +474,32 @@ li.relationships a {
 /*
 *< input fields */
 input[type="text"], textarea, input[type="password"], input[type="email"], form.search input[type="text"], .actions input[type="text"], textarea:focus {
-    background: var(--background-input);
+	padding: 0.25em var(--spacing-1);
+    color: var(--text-main);
     border-color: var(--background-input);
+    background: var(--background-input);
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: var(--rounded);
+    box-sizing: border-box;    
 }
+/* keep some fields from collapsing */
+#header form.search input[type="text"], .search fieldset input[title*="search"] { box-sizing: content-box }
+.actions input[type="text"]:hover, .actions input[type="password"]:hover, .actions input[type="email"]:hover { 	border-color: var(--background-input) }
+input[type="text"]:focus, form.search input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, .actions input[type="text"]:focus { outline: none; border-color: var(--border-alt) }
+/* keep autofilled inputs dark, might not work in actual skin :( */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-input) inset !important;
+  -webkit-text-fill-color: var(--text-main);
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus { 
+    box-shadow: 0 0 0px 1000px var(--background-input) inset !important;
+    /* ? add color perhaps */
+    -webkit-box-shadow: 0 0 0px 1000px var(--background-input) inset !important 
+    /* TODO split for skin */
+}
+/* invalid fields */
+.LV_invalid_field, input[type="text"].LV_invalid_field, input[type="password"].LV_invalid_field, input[type="email"].LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active { border: 1px solid var(--error) }
 /*
 *< checkbox, radio */
 /**4** forms */
