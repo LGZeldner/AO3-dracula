@@ -597,6 +597,24 @@ input[type="radio"]:checked:after, .filters [type="radio"]:checked:after {
     -o-transform: scale(0.75);
 }
 /*< select */
+select, select:focus {
+    -webkit-appearance: none;
+    appearance: none;
+	font-size: inherit;
+    padding: 0.25em;
+	padding-right: 1.5em;
+	line-height: 1.286;
+	text-overflow: ellipsis;
+	text-rendering: auto;
+	background: var(--background-input) url(https://i.imgur.com/5mE5hbu.png) right center no-repeat; 
+    background-size: contain;
+    vertical-align: middle;
+    border: 1px solid var(--background-input);
+    border-radius: var(--rounded);
+    color: var(--text-main);
+    outline: none;
+}
+.action > select { background-color: var(--background-main) }
 /**4** forms */
 /*
 *< filters */
