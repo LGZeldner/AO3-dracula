@@ -501,7 +501,102 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 /* invalid fields */
 .LV_invalid_field, input[type="text"].LV_invalid_field, input[type="password"].LV_invalid_field, input[type="email"].LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active { border: 1px solid var(--error) }
 /*
-*< checkbox, radio */
+*< checkbox */
+input[type="checkbox"],  input[type="radio"],  .filters [type="radio"], .filters [type="checkbox"], .actions input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid var(--border-checkbox);
+	border-radius: 0.375em;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.125em;
+	width: 1.125em;
+    margin: 0;
+    outline: none;
+    position: relative;
+	/* TODO split for skin */
+    transition: background .3s, border-color .3s;
+    -webkit-transition: background .3s, border-color .3s;
+    -moz-transition: background .3s, border-color .3s;
+    -o-transition: background .3s, border-color .3s;
+    vertical-align: middle;
+}
+input[type="checkbox"]:after, input[type="radio"]:after,  .filters [type="radio"]:after, .filters [type="checkbox"]:after, .actions input[type="checkbox"]:after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;    
+	border: 0.2rem solid black;
+	border-left: 0;
+    border-top: 0;    
+    width: 50%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
+    -webkit-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
+    -ms-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
+    -moz-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
+    -o-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
+    transition: transform .3s ease, opacity .3s;
+    -webkit-transition: opacity .3s, -webkit-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease, opacity .3s;	
+    -o-transition: -o-transform .3s ease, opacity .3s;	
+}
+input[type="checkbox"]:checked, .filters [type="checkbox"]:checked, .actions input[type="checkbox"]:checked {
+    background: var(--border-checkbox);
+	opacity: 1;
+	/* TODO split for skin */
+    transition: opacity .3s, transform .6s ease;
+    -webkit-transition: opacity .3s, -webkit-transform .6s ease;
+	-moz-transition: opacity .3s, -moz-transform .6s ease;    
+	-o-transition: opacity .3s, -o-transform .6s ease;    
+}
+input[type="checkbox"]:checked:after, .filters [type="checkbox"]:checked:after, .actions input[type="checkbox"]:checked:after {
+	opacity: 1;
+	transform: translateX(15%) translateY(-20%) scale(0.5) rotate(43deg);
+    -webkit-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(43deg);
+    -ms-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(43deg);
+    -moz-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(43deg);
+    -o-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(43deg);
+	/* TODO split for skin */
+}
+input + label { vertical-align: middle }
+label > input[type="checkbox"] { vertical-align: top }
+.actions input[type="checkbox"]:hover { border: 1px solid var(--border-checkbox) }
+.actions li input[type="checkbox"] {
+    margin: 0;
+    vertical-align: sub;
+}
+/*< radio */
+input[type="radio"]+label, input[type="checkbox"]+label { padding-left: var(--spacing-1) }
+label>input[type="radio"], label>input[type="checkbox"], label>.filters [type="radio"] { margin-right: var(--spacing-1) }
+input[type="radio"], input[type="radio"]:after, .filters [type="radio"], .filters [type="radio"]:after {
+	border: 1px solid var(--border-radio);
+	border-radius: 50%;
+    box-sizing: content-box;
+}
+input[type="radio"]:after, .filters [type="radio"]:after {
+	width: inherit;
+	height: inherit;
+	background: var(--border-radio);
+	border: 0;
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+		/* TODO split for skin */    
+}
+input[type="radio"]:checked:after, .filters [type="radio"]:checked:after {
+    opacity: 1;
+    	/* TODO split for skin */
+	transform: scale(0.75);
+	-webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+}
+/*< select */
 /**4** forms */
 /*
 *< filters */
