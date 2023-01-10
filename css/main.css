@@ -618,6 +618,48 @@ select, select:focus {
 /**4** forms */
 /*
 *< filters */
+.dashboard>form.filters { margin: 0 }
+/* shrink space around submit */
+.filters .submit input { margin: var(--spacing-2) 0 }
+/* expander aka triangle before group */
+.filters .expander, .filters .expanded .expander {
+    height: 90%;
+    min-height: var(--mp-m);
+    outline: none;
+    background-image: none;
+    padding-left: 0;
+} 
+.filters .collapsed .expander { outline: none }
+.filters .collapsed button::before,
+.filters .expanded button::before {
+    content: "\203A";
+    font-size: 1.5em;   
+    padding: 0 .125em;
+    line-height: var(--mp-sm);
+}
+.filters .expanded button::before {
+    display: inline-block;
+    transform: rotate(90deg) translateX(.1em); 
+}
+/* hide ao3 default radio and checkbox design */
+.filters [type="radio"]+.indicator,  .filters [type="radio"]+.indicator:before, .filters [type="checkbox"]+.indicator, .filters [type="checkbox"]+.indicator:before { display: none }
+/* filters include color */
+.filters .include input, .nomination .actions .yes+input { 	border-color: var(--text-approve) }
+.filters .include [type="checkbox"]:checked, .filters .include [type="radio"]:checked:after, .nomination .actions .yes+input[type="checkbox"]:checked { background-color: var(--text-approve) }
+/* filters exclude color */
+.filters .exclude input, .nomination .actions .no+input { border-color: var(--error) }
+.filters .exclude [type="checkbox"]:checked, .filters .exclude [type="radio"]:checked:after, .nomination .actions .no+input[type="checkbox"]:checked { background-color: var(--error) }
+/* add space between list of tags and input field */
+.autocomplete li.added + li.input { margin-top: var(--spacing-1) }
+/* clear filters button */
+.filters .footnote {
+	font-size: var(--font-sm);
+	padding: 0 0.643em var(--spacing-1);
+}
+.filters .footnote a { 
+	vertical-align: top;
+	font-size: var(--font-xs);
+	padding: var(--padding-button-sm) }
 /*
 *< toggle forms */
 /*
