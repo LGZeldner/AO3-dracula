@@ -335,8 +335,30 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 #modal, form blockquote.userstuff { border-radius: var(--rounded) }
 /*
 *< no effects */
+.wrapper, input, textarea, #header .menu, #small_login, #greeting .menu, #header .primary, .secondary, .LV_invalid, .autocomplete div.dropdown ul, .ui-sortable li, .ui-sortable li:hover, .ui-draggable form, #ui-datepicker-div, #modal, #modal.img .content img, #modal.img .footer, form .notice, form ul.notes, .notice, .comment_notice, .kudos_notice, .announcement .userstuff, .qtip-content, ul.notes, .alert .userstuff, .caution, #proxy-notice, p.required, .alert.flash, .comment_error, .kudos_error, .event .userstuff, .error,  .LV_invalid, form blockquote.userstuff, .actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus, .current, span.delete, .listbox .index {
+	box-shadow: none;
+	text-shadow: none;	
+}
+.preface a:hover { text-decoration: none }
+.filters input:focus+.indicator+span, a:active, a:focus img, a:focus, #header #search input:focus { outline: none }
 /*
 *< gradients */
+.announcement .thermometer .track {
+	background: var(--text-notice);
+	border-color: var(--text-notice);
+	background-image: linear-gradient(135deg, var(--text-notice) 0%, var(--text-approve) 100%);
+}
+#modal .content, .userstuff h3:first-of-type, .chapter.preface:first-child {
+	border-color: transparent;
+    border-width: var(--border-width);
+    border-image: var(--border-accent-gradient);
+}
+.home .header h2, .faq .categories h3 {
+	border-image: var(--border-pink-yellow);
+}
+.chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
+	border-image: var(--border-cyan-purple);
+}
 /*
 *< recolored pictures */
  /* replace pictures completely */
