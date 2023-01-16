@@ -312,8 +312,27 @@ span.unread {
 .actions .reindex a, #greeting .icon, #dashboard, #dashboard.own { border-color: var(--accent) }
 /*
 *< no border */
+#footer, #modal, .draft .chapter.preface, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, 
+/* try to avoid three-layer forms */
+form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #dashboard ul:first-of-type { border: 0 }
+.dropdown #small_login .footnote a { border-bottom: 0 }
+.chapter.preface:last-child { border-top: 0 }
+.action, .action:hover, label.action, label.action:hover { border-color: var(--background-main) }
 /*
 *< new border */
+tfoot, tfoot td, tbody tr, tbody th, tr:hover, col.name, #dashboard ul, .ui-datepicker td, #dashboard .secondary, .draft, .preface h3, .userstuff h3, .userstuff h6, .userstuff hr, hr { border-color: var(--border-alt) }
+#modal.img .content img, .picture .header, .blurb .header.module, .splash .module h3, form dt { 	
+	border-width: 0.1rem;
+	border-color: var(--border-interactive-card);
+	border-bottom: 0.1rem solid var(--border-interactive-card);
+} 
+#small_login, fieldset, fieldset dl dl, fieldset fieldset dl dl, /* no border perhaps */
+dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose form legend, .removeme fieldset .heading, .region:first-child .navigation+form legend, .post.bookmark legend, form.single fieldset, .dashboard .filters fieldset, .toggled form, .dynamic form, .expandable.secondary, #dashboard ul.expandable.secondary:first-of-type, .replied, span.claimed, .actions span.defaulted, .listbox, fieldset fieldset.listbox, .listbox > .heading, .inbox .actions label, .bookmark .user, div.comment, .splash .module div.account, .faq .example, .guideline .example, #symbols-key dl, form dl {
+	border: var(--border-width) solid var(--border-interactive-card);
+	border-radius: var(--rounded);
+}
+.inbox .actions label { border-width: 1px }
+#modal, form blockquote.userstuff { border-radius: var(--rounded) }
 /*
 *< no effects */
 /*
