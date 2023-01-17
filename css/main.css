@@ -447,6 +447,15 @@ ui-datepicker-div a.ui-datepicker-prev.ui-corner-all, #ui-datepicker-div a.ui-da
 
 /*
 *< modal */
+/* dark scrollbar */
+#modal div.content::-webkit-scrollbar { width: 8px }
+#modal div.content::-webkit-scrollbar-track { background: var(--black) }
+#modal div.content::-webkit-scrollbar-thumb {
+    background: var(--background-input);
+    border-width: 4px;
+    border-radius: 20px;  
+}
+#modal div.content::-webkit-scrollbar-thumb:hover { background: var(--hover) }
 /*
 *< buttons */
 .actions a, .actions a:link, .action a, a.action, .action:link, .actions input[type="submit"], input[type="submit"], .announcement input[type="submit"], button, .announcement .action, span.question, span.delete a, .filters .footnote a, #ui-datepicker-div a.ui-datepicker-prev.ui-corner-all, #ui-datepicker-div a.ui-datepicker-next.ui-corner-all, .tags a[data-remote="true"], #show_signups, #hide_signups {
