@@ -700,6 +700,32 @@ select, select:focus {
 }
 .action > select { background-color: var(--background-main) }
 /**4** forms */
+/* get rid of extra space */
+legend label { margin-right: 0 }
+/* underlined labels on the left */
+form dt { 	border-width: var(--border-width) }
+/* move inputs on the right to underline */
+.meta ul li { padding-left: 0 }
+/* add space below tags */
+.meta dd ul li.added.tag { margin-bottom: var(--spacing-2) }
+/* move tip for the required fields */
+dd.required, div.rtf-html-field { position: relative }
+.LV_invalid {
+	margin: 0;
+	left: 0;
+	bottom: 0;
+}
+/* lighten layout in dashboard */
+.dashboard>form, .dashboard>form>fieldset>p, #new_challenge_signup>fieldset {
+	border-color: var(--background-main);
+	padding: 0;
+	margin: var(--spacing-2) 0;
+}
+/* forms with separate submit actions */
+/* align form parts */
+fieldset {
+margin-left: auto;
+margin-right: auto }
 /*
 *< filters */
 .dashboard>form.filters { margin: 0 }
