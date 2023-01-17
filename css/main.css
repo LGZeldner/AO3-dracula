@@ -437,8 +437,14 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 	background: var(--background-dropdown);
 	border-color: var(--background-dropdown);
 }
+/* tooltip height */
+div.autocomplete.dropdown p.notice { margin-bottom: 0 }
 /*
 *<< calendar */
+#ui-datepicker-div { padding: var(--spacing-1) }
+ui-datepicker-div a.ui-datepicker-prev.ui-corner-all, #ui-datepicker-div a.ui-datepicker-next.ui-corner-all {     padding: var(--padding-button-xs) }
+.ui-datepicker td a { color: var(--text-main) }
+
 /*
 *< modal */
 /*
