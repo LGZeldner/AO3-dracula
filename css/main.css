@@ -858,6 +858,13 @@ fieldset .tagset.listbox .heading + *, .expander_parent.heading + *, .cast.listb
 fieldset .tagset.listbox .heading + .actions a { padding: var(--padding-button-xs) }
 /*
 *< tables  */
+thead th {
+    text-align: left;
+    text-transform: uppercase;
+	padding-left: 0;
+}
+tr:hover, td:hover, td, tbody th, tbody tr:hover th, .ui-datepicker tbody tr, .ui-datepicker tbody td, .ui-datepicker tbody tr:hover, .ui-datepicker td:hover {  border: var(--border-width) solid var(--border-alt) }
+.userstuff tr:hover, .userstuff td:hover, .userstuff tbody tr:hover th {  border: none }
 /**6** pages adjustments */
 /*
 *< main page */
