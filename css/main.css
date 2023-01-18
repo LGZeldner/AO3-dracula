@@ -777,8 +777,85 @@ margin-right: auto }
 /*
 *<< rich text editor */
 /**5** lists, groups */
+/* get rid of redundant scrollbars */
+.listbox, .removeme fieldset, .tags li.listbox, fieldset fieldset.listbox {
+	overflow: visible;
+    position: relative;
+	padding: 0 var(--spacing-2) 0;
+	box-sizing: border-box;
+	margin-top: var(--spacing-4);
+}
+.listbox > .index {
+	padding-bottom: var(--spacing-1);
+	padding-left: 0;
+}
+.listbox > .index > li:last-child { margin-bottom: 0 }
+/* decorate headings as legends from forms */
+form.verbose legend, .verbose form legend, .post.bookmark legend, .listbox > .heading, .removeme fieldset .heading, .region:first-child .navigation+form legend {
+	height: auto;
+    width: auto;
+    font-size: var(--spacing-4-5);
+	opacity: 1;
+	padding: var(--spacing-1) var(--spacing-2);
+}
+.listbox .listbox > .heading, .post.bookmark legend ~ fieldset legend, form.verbose legend ~ fieldset legend, .verbose form legend ~ fieldset legend, .listbox > h5.heading { font-size: var(--spacing-4) }
+.removeme fieldset .heading, .listbox > .heading {
+    position: absolute;
+	z-index: 2;
+    top: var(--nspacing-4);
+}
+.removeme fieldset h4.heading, .listbox > h4.heading { font-size: var(--spacing-4) }
+.removeme fieldset > .heading { top: var(--nspacing-6) }
+/* hide stuff away */
+.listbox .landmark.heading {
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+/* add extra space inside instead absolute positioned heading */
+.listbox > .heading + * { padding-top: var(--spacing-4-5) }
+.listbox > .heading + div > ul { padding-top: 0 }
+/* add extra space outside to compensate absolute positioned heading */
+.listbox > .listbox { margin-top: var(--spacing-8) }
+/* remove listbox markup on certain cases - bookmarks, works, series */
+.bookmark.listbox, .series.listbox, .work.listbox {
+    overflow: auto;
+    border: 0;
+    padding: 0;
+	margin-top: var(--spacing-2);
+}
+.bookmark.listbox > .heading, .series.listbox > .heading, .work.listbox > .heading {
+	position: static;
+	border: 0;
+	padding: 0;
+}
+.bookmark.listbox > .heading + *, .series.listbox > .heading + *, .work.listbox > .heading + * { padding: 0 }
+/* keep fandom box on profile page from breaking */
+.listbox > .index:after { display: none }
+/* reduce space between pagination and works */
+ol.pagination + ul.group > li.work { margin-top: 0 }
 /*
 *< alphabet */
+/* keep box with floated content from collapsing */
+.alphabet .listbox > .index:after, .tags.index:after {
+	content: "";
+    clear: both;
+    display: table;
+}
+/* keep popular fandoms boxes from randomly floating */
+.media .listbox {
+	width: auto;
+	min-width: 45%;
+	float: left;
+	margin-right: var(--spacing-5);
+}
+/* expandable from header lists */
+fieldset .tagset.listbox .heading, .expander_parent.heading, .cast.listbox .heading  {
+    position: static;
+    border: 0;    
+}
+fieldset .tagset.listbox .heading + *, .expander_parent.heading + *, .cast.listbox .heading + * { padding-top: 0 }
+fieldset .tagset.listbox .heading + .actions a { padding: var(--padding-button-xs) }
 /*
 *< tables  */
 /**6** pages adjustments */
