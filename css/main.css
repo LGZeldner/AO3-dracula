@@ -870,6 +870,19 @@ tr:hover, td:hover, td, tbody th, tbody tr:hover th, .ui-datepicker tbody tr, .u
 *< main page */
 /*
 *< header */
+/* hide red logo */
+#header .logo { padding: 42px 0 0 61px }
+#header #search .button {
+	background: none;
+	color: var(--text-main);
+}
+/* input field */
+#header #search .text {
+	padding: 0.15em .25em;
+	border: 1px solid var(--accent);
+}
+/* dropdown menu */
+#header .menu li { border-color:  var(--hover) }
 /*
 *< footer */
 /*
