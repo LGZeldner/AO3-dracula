@@ -887,6 +887,25 @@ tr:hover, td:hover, td, tbody th, tbody tr:hover th, .ui-datepicker tbody tr, .u
 *< footer */
 /*
 *< profile */
+#dashboard.own { padding: 0 }
+/* fix floated header */
+.module.primary.header { float: none }
+/* keep navigation to the right */
+.home .header ul.actions { 	margin-left: 100px }
+ul.navigation.actions, ul.actions[role="navigation"] { padding-right: 0 }
+/* align info about other's bookmarks */
+.bookmark .recent .index { 	padding: 0 }
+.bookmark .own.user .byline {
+    margin-right: 0;
+    border-bottom: 0.1rem solid var(--border-alt);
+	padding-bottom: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
+}
+.bookmark .recent .own.user .byline { border-bottom: 0 }
+.picture div.header:only-child, .blurb div.header.module:only-child { border-bottom: 0 }
+/* make short blurbs shorter */
+.short.blurb .header.module { margin-bottom: 0 }
+li.short.blurb > ul.tags.commas { border-top: 0 }
 /*
 *<< inbox */
 /*
