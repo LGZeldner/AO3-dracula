@@ -908,6 +908,10 @@ ul.navigation.actions, ul.actions[role="navigation"] { padding-right: 0 }
 li.short.blurb > ul.tags.commas { border-top: 0 }
 /*
 *<< inbox */
+.replied, span.claimed {
+    background: var(--background-disabled);
+    color: var(--text-disabled);
+}
 /*
 *<< statistics */
 /*
