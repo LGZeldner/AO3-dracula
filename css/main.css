@@ -914,6 +914,15 @@ li.short.blurb > ul.tags.commas { border-top: 0 }
 }
 /*
 *<< statistics */
+#stat_chart { background: var(--text-disabled) }
+rect[fill="#ffffff"] { opacity: 0 }
+rect[fill="#ebebeb"] { opacity: 25% }
+rect[fill="#cccccc"] { opacity: 50% }
+rect[fill="#993333"] { 
+  filter: hue-rotate(260deg);
+  -webkit-filter: hue-rotate(260deg);
+  opacity: 97%;
+}
 /*
 *< work */
 /*
