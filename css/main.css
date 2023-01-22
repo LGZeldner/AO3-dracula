@@ -924,6 +924,16 @@ rect[fill="#993333"] {
   opacity: 97%;
 }
 /*
+*< nominations */
+.nominations .approved, .nominations .approved:hover, .nominations .rejected, .nominations .rejected:hover, .nominations .unreviewed, .nominations .unreviewed:hover, span.symbol.approved, span.symbol.approved:hover, span.symbol.rejected, span.symbol.rejected:hover, span.symbol.unreviewed, span.symbol.unreviewed:hover {
+	background: var(--text-approve);
+    color: black;
+    vertical-align: baseline;
+    padding: var(--padding-button-xs);
+}
+.nominations .rejected, .nominations .rejected:hover, span.symbol.rejected, span.symbol.rejected:hover { background: var(--error) }
+.nominations .unreviewed, .nominations .unreviewed:hover, span.symbol.unreviewed, span.symbol.unreviewed:hover { background: var(--accent) }
+/*
 *< work */
 /*
 *<< comments */
