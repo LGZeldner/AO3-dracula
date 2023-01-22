@@ -394,14 +394,59 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 /**2** font */
 /*
 *< main font */
+body, 
+.toggled form, .dynamic form, .secondary, .dropdown, .bookmark .user .meta .tag, span.unread, .replied, span.claimed, .actions span.defaulted, blockquote, pre, .userstuff li, .userstuff ol ul li, #show_signups, #hide_signups, .filters h4.heading, input, textarea, select, button {
+    font-family: var(--font-service);    
+    font-weight: inherit;   
+}
+strong, b, .userstuff h4, .warning, .warnings, span.byline, a.user, .canonical,
+li.requested, .comment .role, .splash .count, .faq .screencast .label, .userstuff dt { font-weight: var(--font-w-sb) }
+#main, #workskin, #header,
+select { font-size: var(--font-sm) }
 /*
 *< work text, summary, comment */
+#modal .userstuff, #outer .userstuff {
+	font-family: var(--font-work);
+    font-size: var(--font-md); 
+    line-height: 1.375;
+	font-weight: lighter;
+}
+.userstuff p {
+    margin: 0 auto;
+    line-height: 1.375;
+    text-indent: var(--spacing-4);
+    text-align: justify;
+}
 /*
 *< headings */
+.heading, h1, h2, h3, h4, h5, h6, a.work, .bookmark .user .meta, span.symbol, form.single legend, form.verbose legend, .verbose form legend, .post.bookmark legend, .listbox .heading, .removeme fieldset .heading, .region:first-child .navigation+form legend {
+    font-family: var(--font-title);    
+}
+h2 {
+	font-size: var(--font-xxl);
+}
+.heading a.question { font-size: var(--font-md) }
+
 /*
 *< monospace */
+kbd, tt, code, var, samp, #outer .reading h4.viewed, .reading h4.viewed, .splash .news .meta, .blurb .datetime, .posted.datetime, .comment .edited, .blurb dl.stats, dl.work.meta dl.stats, #work_dates input[type="text"],  .css pre, #skin_css, .news .meta .published, div.ui-datepicker-title span, .ui-datepicker-calendar {
+    font-family: var(--font-data);
+}
+kbd, tt, code, var, samp, pre, #outer .reading h4.viewed, .reading h4.viewed, .splash .news .meta, .blurb .datetime, .posted.datetime, .comment .edited, .blurb dl.stats {
+    font-weight: normal;
+    font-size: var(--font-sm);
+}
+.summary pre { font-size: var(--font-md); }
 /*
 *< list markers */
+ul { list-style: none }
+ul > li::marker { color: transparent }
+ul.notes li:before, .error ul li:before, .notice ul li:before, .caution ul li:before, .alert.flash ul li:before, .splash .account ul li:before, .userstuff ul li:before {
+    content: "—";
+    padding-right: 0.25em;
+}
+/* keep list marker & paragraph together  */
+.userstuff ul li p { display: inline }
 /**3** interactive */
 /*
 *< tabs */
@@ -935,8 +980,33 @@ rect[fill="#993333"] {
 .nominations .unreviewed, .nominations .unreviewed:hover, span.symbol.unreviewed, span.symbol.unreviewed:hover { background: var(--accent) }
 /*
 *< work */
+/* align meta before work */
+dl.meta, .news dl.meta { padding: var(--spacing-2) var(--spacing-2) 0 }
+.userstuff blockquote {
+    margin-inline-start: 0;
+    border-color: var(--border-blockquote);
+}
+li.blurb > ul.tags.commas { padding-top: var(--spacing-1) }
+li.blurb[class*="external-work"] > ul.tags.commas { border-top: 0 }
 /*
 *<< comments */
+/* add some space after actions */
+.feedback ul.actions { 	margin-bottom: var(--spacing-1) }
+/* shrink space before&after kudos */
+p.kudos { margin: var(--spacing-2) 0 }
+/* get rid of space on comment form */
+.post.comment form label { display: none }
+.post.comment form h4 { margin: 0 }
+/* align comment headings (attempt to) */
+.comment h4.byline {
+    padding-left: 0;
+    margin-left: 108px;
+	border-bottom: var(--border-width) solid var(--border-interactive-card);
+}
+.abbreviated h4.byline {
+    padding-left: 0;
+    margin-left: 83px;
+}
 /*
 *< collections */
 /*
