@@ -1053,6 +1053,15 @@ p.kudos { margin: var(--spacing-2) 0 }
 }
 /*
 *< collections */
+#header h2 {
+    background-color: var(--background-collections);
+    border: 0;
+}
+span.offered { color: var(--text-approve) }
+span.requested { color: var(--error) }
+span.offered.requested { color: var(--caution) }
+/* keep buttons from crossing the line */
+.preface.group .actions li a, .preface.group .actions li a:link { padding: var(--padding-button-xs) }
 /*
 *< faq */
 /*
