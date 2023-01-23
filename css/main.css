@@ -817,8 +817,52 @@ margin-right: auto }
 	padding: var(--padding-button-sm) }
 /*
 *< toggle forms */
+/* hide legends */
+.dynamic form legend, .toggled form legend, .dynamic .post.bookmark form legend, .toggled .post.bookmark form legend, .filters legend {
+	font-size: 0;
+	padding: 0;
+}
+.dynamic form p.footnote + textarea { margin-top: var(--spacing-2) }
+/* lighten user-added forms */
+.removeme > fieldset { margin: var(--spacing-2) 0 }
+/* move button a little down */
+.removeme ~ p.actions {
+	padding: 0.429em 0.25em 0.25em 0;
+	margin-top: var(--spacing-2);
+}
 /*
 *< complex forms */
+/* work */
+/* set date select into single line */
+.datetime select {
+    width: 32.3%;
+    min-width: 10em;
+}
+/* edit skin */
+/* shrink parent skin form into line */
+#advanced_skin .removeme > fieldset > p {
+	width: 20%;
+	float: right;
+}
+#advanced_skin .removeme > fieldset > ul.autocomplete { width: 75% }
+/* signup form */
+  /* long tag labels */
+  .listbox .options.index.group {
+	  overflow-x: auto;
+  }
+  .listbox .options.index.group, .listbox .options.index.group label {
+	box-sizing: border-box;
+	padding-left: 0;
+  }
+  .listbox .options.index.group label { 
+	border-left: 0;
+	margin-right: 0;
+	white-space: normal;
+	height: auto;
+  }
+  .listbox .options.index.group li {
+    margin: 0;
+}
 /*
 *<< rich text editor */
 /**5** lists, groups */
