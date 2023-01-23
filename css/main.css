@@ -1075,6 +1075,11 @@ ul.tree li { margin-top: 0 }
 *< faq */
 /*
 *< news */
+/* news blurbs on the main */
+.splash .news li { 	padding: var(--padding-button-lg) }
+.news dl.meta { margin-bottom: var(--spacing-2) }
+/* hide some stuff  */
+.admin .header h3.landmark { font-size: 0 }
 /**7** visited links */
 a:visited, .listbox .heading a:visited, .splash .favorite li a:visited, .announcement .userstuff a:visited, .splash .favorite li:nth-of-type(odd) a:visited { color: var(--link-visited) }
 a:visited:hover, .blurb h4 a:visited:hover, .listbox .heading a:visited:hover, .announcement .userstuff a:focus, .announcement .userstuff a:visited:hover, .splash .favorite li a:visited:hover, .splash .favorite li:nth-of-type(odd) a:visited:hover {
