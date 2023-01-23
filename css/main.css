@@ -1063,6 +1063,15 @@ span.offered.requested { color: var(--caution) }
 /* keep buttons from crossing the line */
 .preface.group .actions li a, .preface.group .actions li a:link { padding: var(--padding-button-xs) }
 /*
+*< tag page */
+/* get rid of extra space in the metatags box */
+ul.tree li { margin-top: 0 }
+/* draw borders for subtags  */
+.tree .tags.tree.index {
+    border-left: 1px solid var(--border-alt);
+	margin-left: var(--spacing-1);
+}
+/*
 *< faq */
 /*
 *< news */
