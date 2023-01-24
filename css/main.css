@@ -65,6 +65,8 @@ Table of Contents
 **8** media rules
 */
 /**0** fonts, colors, spacing */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 /* dracula ui colors */
 :root {
     --black: #21222c;
@@ -102,11 +104,9 @@ Table of Contents
     --cyan-purple: linear-gradient(var(--gradientDegree),var(--cyan) 0%,var(--purple) 100%);
     --pink-yellow: linear-gradient(var(--gradientDegree),var(--pink) 0%,var(--yellow) 100%);
 }
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 :root {
     --font-ao3-serif: Georgia, serif;
-    --font-monospace: 'IBM Plex Mono', "Courier New", Courier, monospace;    
+    --font-monospace: 'IBM Plex Mono', 'Monaco', 'Consolas', 'Courier New', Courier, monospace;    
 	--font-data: var(--font-monospace);
     --font-sans-serif: 'IBM Plex Sans', 'DejaVu Sans', 'Helvetica Neue', 'Trebuchet MS', Helvetica, sans-serif;
 	--font-service: var(--font-sans-serif);
@@ -1025,6 +1025,7 @@ rect[fill="#993333"] {
 /*
 *< work */
 /* align meta before work */
+.blurb .header .heading { margin-right: 6em }
 dl.meta, .news dl.meta { padding: var(--spacing-2) var(--spacing-2) 0 }
 .userstuff blockquote {
     margin-inline-start: 0;
@@ -1089,3 +1090,233 @@ a:visited:hover, .blurb h4 a:visited:hover, .listbox .heading a:visited:hover, .
 .actions a:visited, .action a:visited, .action:visited, span.action a:visited, .listbox .heading span.action a:visited, .pagination.actions a:visited { color: var(--text-button) }
 a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker td a:visited, .ui-datepicker td a:visited:hover, a.tag:visited, a.tag:visited:hover, .action:visited:hover, .action a:visited:hover, .actions a:visited:hover, .listbox .heading span.action a:visited:hover, span.action a:visited:hover, span.action:hover, span.action:hover a:visited, .heading a.tag:visited, .heading a.tag:visited:hover { color: var(--text-main) }
 /**8** media rules */
+@media only screen and (max-width: 62em) {
+    #main.dashboard { margin: auto }
+    /* dashboard */
+    #dashboard .current { 
+      border-right: 0;
+      border-bottom: var(--border-width) solid var(--text-tab-current);
+      padding-bottom: 0;
+    }
+    #dashboard ul.navigation.actions li a {
+      border-right: 0;
+      border-bottom: 0.0625rem solid var(--border-alt);
+      padding: 0 var(--spacing-1) 0.0625rem var(--spacing-1);
+    }
+    #dashboard li {
+      display: block;
+      float: left;
+      margin: 0;
+    }
+    #dashboard ul:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    #dashboard .pseud { display: contents }
+    #dashboard .expandable.secondary {
+      display: block;
+      padding: var(--spacing-1);
+    }
+    #dashboard .expandable.secondary.hidden { display: none }
+    #dashboard ul.navigation.actions li a[title*="Switcher"] {
+      border-color: transparent;
+      border-radius: var(--rounded);
+    }
+  }
+  @media only screen and (max-width: 42em) {
+    .javascript, #outer { background: var(--background-main) }
+  /* font adjustments */
+  /* ? add separate font styles 
+    #modal .userstuff, #outer .userstuff { }
+    .userstuff p { }
+    */
+   /* comments */
+    .comment h4.byline {
+      padding-left: 0;
+      margin-left: 58px
+    }
+    .icon[src="/images/skins/iconsets/default/icon_user.png"], .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"]{ padding: 50px 0 0 50px }
+     /* main content width */
+    #main { padding: var(--spacing-1) var(--spacing-3) }   
+    /* header */
+    #header > h1 > a > span, #header > h1 > a > sup { display: none }
+    #header .logo { padding: 25px 0 0 36px; }
+    #greeting .navigation.actions + .icon { display: none }
+    #header .primary a { padding: 0.25em 0.5em }
+    #header .user .open a:focus { 
+      color: var(--text-main);
+      background: var(--dropdown);
+    }
+    #header .menu, #small_login, #header .dropdown:hover .current + .menu, #header .menu, #small_login, #header .dropdown:hover .current + .menu { width: auto }
+    #header .primary.navigation li:nth-child(4) .menu { right: 0 }
+    #header li {
+      display: inline-block;
+      float: none;
+    }
+    #header .search {
+      display: block;
+      float: none;
+    }
+    #greeting .navigation.actions a[href*="/users/logout"] {
+      font-size: 0;
+      height: 1.386rem;
+      border-radius: var(--rounded);
+    }
+    #greeting .navigation.actions a[href*="/users/logout"]:before {
+      font-size: var(--font-sm);
+      content: "\2002";
+      width: 0.7rem;
+      position: relative;
+      left: 0.5em;
+      display: inline-block;
+      border: 0.1rem solid var(--text-main);
+      border-radius: var(--rounded) 0 0 var(--rounded);
+      border-right-width: 0;
+    }
+    #greeting .navigation.actions a[href*="/users/logout"]:after {
+      font-size: var(--font-md);
+      font-weight: bold;
+      content: "\21AA";
+    }
+    /* blurbs */
+    li.blurb, .blurb .blurb { padding: 0.5em }
+    .blurb .header .heading, .blurb .header ul { margin: 0 }
+    .blurb > .header h4.heading { padding-top: 30px } /* work */
+    .picture.blurb > .header h4.heading, .blurb > .picture.header h4.heading { padding-top: var(--spacing-4-5) } /* work */
+    .picture.blurb > .header, .blurb > .picture.header { 
+      padding-left: 59px; /* people */
+      box-sizing: border-box; 
+    }
+    .index .picture .icon { left: 0 }
+    .blurb ul.required-tags { width: auto }
+    .blurb ul.required-tags li {
+      display: inline-block;
+      vertical-align: middle
+    }
+    .blurb ul.required-tags li+li+li, .blurb ul.required-tags li+li+li+li { position: static }
+    .bookmark p.status {
+      margin: 0;
+      margin-right: 3em;
+      float: right;
+    }
+    .bookmark span.count {
+      position: static;
+      vertical-align: top;
+    }
+    .bookmark .status span, .bookmark .status a { display: inline-block }
+    .status .private .text { vertical-align: top}
+    .bookmark .datetime {
+      top: 0;
+      font-size: var(--font-xs);
+      width: 4em;
+      text-align: end;
+    }
+    .bookmark .user .byline, .bookmark .own.user .byline { margin-right: 3em }
+    /* work */
+    ul.work.navigation.actions { 
+      margin-bottom: var(--spacing-2);
+      position: relative;
+    }
+    .work.navigation.actions .expandable.secondary {
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: unset;
+    }
+    #chapter_index {
+      top: unset;
+      bottom: 0;
+    }
+    #chapter_index p {
+      width: 100%;
+      padding: 0;
+    }
+    #chapter_index select { 
+      margin-top: var(--spacing-2);
+      width: 100%;
+      max-width: fit-content
+    }
+    #chapter_index li:last-child a { 
+      font-size: 0;
+      padding-bottom: 1.525rem;
+    } 
+    #chapter_index li:last-child a:before { 
+      content: "\2261";
+      font-size: var(--font-xxl);
+      position: relative;
+      line-height: 0.8;  
+    } 
+    .preface.group { margin: var(--spacing-4-5) }
+    .chapter.preface.group h3.title { padding-top: 1em }
+    .comment div.icon {
+      margin: 0;
+      position: absolute;
+      top: 0.25rem;
+      left: 0.15rem;
+    }
+    .comment blockquote.userstuff p:first-child { text-indent: 50px }
+    /* collections */
+    .module.primary.header { 
+      display: table;
+      margin-bottom: 0;  
+    }
+    .home .header .userstuff, .home .header dl.stats, .home .header .type { margin-left: 0 }
+    .home .header h2 { 
+        min-height: 50px;
+        margin-left: 75px
+     }
+    .icon, .icon img {
+      height: 75px;
+      width: 75px;
+    }
+    .tag .primary .icon {
+      height: 100px;
+      width: 100px;
+    }
+    .home .header .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 75px 0 0 75px }
+    .home .header ul.actions { margin-left: 0 }
+    /* forms adjustments */
+    #advanced_skin .removeme > fieldset > p {
+      display: block;
+      width: auto;
+      float: none;
+    }
+    #advanced_skin .removeme > fieldset > ul.autocomplete { width: auto }
+    .toggled form fieldset dl, .dynamic form fieldset dl { margin: 0 }
+    .toggled form p.footnote, .dynamic form p.footnote { line-height: 1 }
+    fieldset, form dl { 
+      margin-left: 0;
+      margin-right: 0;
+    }
+    p select, p select+input { margin-bottom: var(--spacing-2) }  
+    /* filters */
+    .javascript form.filters { right: -14em }
+    /* pages adjustments */
+    .skins .primary .icon { background-position: -10px -185px }
+    #main.invitations-manage { overflow-x: auto }
+    .blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {
+      width: auto;
+      float: none;
+    }
+    .listbox, .removeme fieldset, .tags li.listbox, fieldset fieldset.listbox { margin-top: var(--spacing-6) }
+    .media .listbox { width: 100% }
+    .media .listbox p.actions {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+    .media .listbox:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .child.listbox.group { padding-top: var(--spacing-3) } 
+    a[href="/users/orphan_account"] img.icon { padding: 75px 0 0 75px }
+  /* edit works */
+    .concise li { width: 90% }
+    /* modal */
+    #modal { width: 90% }
+    #modal .content { padding: var(--spacing-3) }
+    #main.errors { background-position: center 75% }
+  }
