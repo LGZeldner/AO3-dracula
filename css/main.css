@@ -1097,7 +1097,7 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
     /* dashboard */
     #dashboard .current { 
       border-right: 0;
-      border-bottom: var(--border-width) solid var(--text-tab-current);
+      border-bottom: .125rem solid var(--text-tab-current);
       padding-bottom: 0;
     }
     #dashboard ul.navigation.actions li a {

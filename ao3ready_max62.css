@@ -1,7 +1,7 @@
 #main.dashboard { margin: auto }    
 #dashboard .current { 
     border-right: 0;
-    border-bottom: 0.125em solid #ff80bf;
+    border-bottom: 0.125rem solid #ff80bf;
     padding-bottom: 0;
 }
 #dashboard ul.navigation.actions li a {
