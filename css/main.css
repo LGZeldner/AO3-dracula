@@ -773,6 +773,8 @@ margin-left: auto;
 margin-right: auto }
 /*
 *< filters */
+/* align narrow filters */
+.narrow-hidden > fieldset { padding: 0 }
 .dashboard>form.filters { margin: 0 }
 /* shrink space around submit */
 .filters .submit input { margin: var(--spacing-2) 0 }

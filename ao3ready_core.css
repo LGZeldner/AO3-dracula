@@ -493,6 +493,7 @@ dd.required, div.rtf-html-field { position: relative }
 fieldset {
 margin-left: auto;
 margin-right: auto }
+.narrow-hidden > fieldset { padding: 0 }
 .dashboard>form.filters { margin: 0 }
 .filters .submit input { margin: 0.5rem 0 }
 .filters .expander, .filters .expanded .expander {
