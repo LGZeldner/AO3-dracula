@@ -1,0 +1,183 @@
+.javascript, #outer { background: #21222c }  
+/* ? add separate font styles 
+#modal .userstuff, #outer .userstuff { }
+.userstuff p { }
+*/   
+.comment h4.byline {
+    padding-left: 0;
+    margin-left: 58px
+}
+.icon[src="/images/skins/iconsets/default/icon_user.png"], .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"]{ padding: 50px 0 0 50px }     
+#main { padding: 0.25rem .75rem }       
+#header > h1 > a > span, #header > h1 > a > sup { display: none }
+#header .logo { padding: 25px 0 0 36px; }
+#greeting .navigation.actions + .icon { display: none }
+#header .primary a { padding: 0.25em 0.5em }
+#header .user .open a:focus { 
+    color: #f8f8f2;
+    background: #35363F;
+}
+#header .menu, #small_login, #header .dropdown:hover .current + .menu, #header .menu, #small_login, #header .dropdown:hover .current + .menu { width: auto }
+#header .primary.navigation li:nth-child(4) .menu { right: 0 }
+#header li {
+    display: inline-block;
+    float: none;
+}
+#header .search {
+    display: block;
+    float: none;
+}
+#greeting .navigation.actions a[href*="/users/logout"] {
+    font-size: 0;
+    height: 1.386rem;
+    border-radius: .25em;
+}
+#greeting .navigation.actions a[href*="/users/logout"]:before {
+    font-size: 0.875rem;
+    content: "\2002";
+    width: 0.7rem;
+    position: relative;
+    left: 0.5em;
+    display: inline-block;
+    border: 0.1rem solid #f8f8f2;
+    border-radius: .25em 0 0 .25em;
+    border-right-width: 0;
+}
+#greeting .navigation.actions a[href*="/users/logout"]:after {
+    font-size: 1rem;
+    font-weight: bold;
+    content: "\21AA";
+}    
+li.blurb, .blurb .blurb { padding: 0.5em }
+.blurb .header .heading, .blurb .header ul { margin: 0 }
+.blurb > .header h4.heading { padding-top: 30px } 
+.picture.blurb > .header h4.heading, .blurb > .picture.header h4.heading { padding-top: 1.125rem } 
+.picture.blurb > .header, .blurb > .picture.header { 
+    padding-left: 59px; 
+    box-sizing: border-box; 
+}
+.index .picture .icon { left: 0 }
+.blurb ul.required-tags { width: auto }
+.blurb ul.required-tags li {
+    display: inline-block;
+    vertical-align: middle
+}
+.blurb ul.required-tags li+li+li, .blurb ul.required-tags li+li+li+li { position: static }
+.bookmark p.status {
+    margin: 0;
+    margin-right: 3em;
+    float: right;
+}
+.bookmark span.count {
+    position: static;
+    vertical-align: top;
+}
+.bookmark .status span, .bookmark .status a { display: inline-block }
+.status .private .text { vertical-align: top}
+.bookmark .datetime {
+    top: 0;
+    font-size: 0.875rem;
+    width: 4em;
+    text-align: end;
+}
+.bookmark .user .byline, .bookmark .own.user .byline { margin-right: 3em }
+
+ul.work.navigation.actions { 
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.work.navigation.actions .expandable.secondary {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: unset;
+}
+#chapter_index {
+    top: unset;
+    bottom: 0;
+}
+#chapter_index p {
+    width: 100%;
+    padding: 0;
+}
+#chapter_index select { 
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: fit-content
+}
+#chapter_index li:last-child a { 
+    font-size: 0;
+    padding-bottom: 1.525rem;
+} 
+#chapter_index li:last-child a:before { 
+    content: "\2261";
+    font-size: 1.75rem;
+    position: relative;
+    line-height: 0.8;  
+} 
+.preface.group { margin: 1.125rem }
+.chapter.preface.group h3.title { padding-top: 1em }
+.comment div.icon {
+    margin: 0;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.15rem;
+}
+.comment blockquote.userstuff p:first-child { text-indent: 50px }
+.module.primary.header { 
+    display: table;
+    margin-bottom: 0;  
+}
+.home .header .userstuff, .home .header dl.stats, .home .header .type { margin-left: 0 }
+.home .header h2 { 
+      min-height: 50px;
+      margin-left: 75px
+ }
+.icon, .icon img {
+    height: 75px;
+    width: 75px;
+}
+.tag .primary .icon {
+    height: 100px;
+    width: 100px;
+}
+.home .header .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 75px 0 0 75px }
+.home .header ul.actions { margin-left: 0 }
+#advanced_skin .removeme > fieldset > p {
+    display: block;
+    width: auto;
+    float: none;
+}
+#advanced_skin .removeme > fieldset > ul.autocomplete { width: auto }
+.toggled form fieldset dl, .dynamic form fieldset dl { margin: 0 }
+.toggled form p.footnote, .dynamic form p.footnote { line-height: 1 }
+fieldset, form dl { 
+    margin-left: 0;
+    margin-right: 0;
+}
+p select, p select+input { margin-bottom: 0.5rem }  
+.javascript form.filters { right: -14em }
+.skins .primary .icon { background-position: -10px -185px }
+#main.invitations-manage { overflow-x: auto }
+.blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {
+    width: auto;
+    float: none;
+}
+.listbox, .removeme fieldset, .tags li.listbox, fieldset fieldset.listbox { margin-top: 1.5rem }
+.media .listbox { width: 100% }
+.media .listbox p.actions {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+.media .listbox:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.child.listbox.group { padding-top: .75rem } 
+a[href="/users/orphan_account"] img.icon { padding: 75px 0 0 75px }    
+.concise li { width: 90% }
+#modal { width: 90% }
+#modal .content { padding: .75rem }
+#main.errors { background-position: center 75% }

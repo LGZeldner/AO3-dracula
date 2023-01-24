@@ -1,0 +1,31 @@
+#main.dashboard { margin: auto }    
+#dashboard .current { 
+    border-right: 0;
+    border-bottom: 0.125em solid #ff80bf;
+    padding-bottom: 0;
+}
+#dashboard ul.navigation.actions li a {
+    border-right: 0;
+    border-bottom: 0.0625rem solid #4c5067;
+    padding: 0 0.25rem 0.0625rem 0.25rem;
+}
+#dashboard li {
+    display: block;
+    float: left;
+    margin: 0;
+}
+#dashboard ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#dashboard .pseud { display: contents }
+#dashboard .expandable.secondary {
+    display: block;
+    padding: 0.25rem;
+}
+#dashboard .expandable.secondary.hidden { display: none }
+#dashboard ul.navigation.actions li a[title*="Switcher"] {
+    border-color: transparent;
+    border-radius: .25rem;
+}
