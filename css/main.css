@@ -312,7 +312,7 @@ span.unread {
 .actions .reindex a, #greeting .icon, #dashboard, #dashboard.own { border-color: var(--accent) }
 /*
 *< no border */
-#footer, #modal, .draft .chapter.preface, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, 
+#footer, #modal, .draft .chapter.preface, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, #symbols-key dl,
 /* try to avoid three-layer forms */
 form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #dashboard > ul:first-of-type { border: 0 }
 .dropdown #small_login .footnote a { border-bottom: 0 }
@@ -327,7 +327,7 @@ tfoot, tfoot td, tbody tr, tbody th, tr:hover, col.name, #dashboard ul, .ui-date
 	border-bottom: 0.1rem solid var(--border-interactive-card);
 } 
 #small_login, fieldset, fieldset dl dl, fieldset fieldset dl dl, /* no border perhaps */
-dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose form legend, .removeme fieldset .heading, .region:first-child .navigation+form legend, .post.bookmark legend, form.single fieldset, .dashboard .filters fieldset, .toggled form, .dynamic form, .expandable.secondary, #dashboard ul.expandable.secondary:first-of-type, .replied, span.claimed, .actions span.defaulted, .listbox, fieldset fieldset.listbox, .listbox > .heading, .inbox .actions label, .bookmark .user, div.comment, .splash .module div.account, .faq .example, .guideline .example, #symbols-key dl, form dl {
+dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose form legend, .removeme fieldset .heading, .region:first-child .navigation+form legend, .post.bookmark legend, form.single fieldset, .dashboard .filters fieldset, .toggled form, .dynamic form, .expandable.secondary, #dashboard ul.expandable.secondary:first-of-type, .replied, span.claimed, .actions span.defaulted, .listbox, fieldset fieldset.listbox, .listbox > .heading, .inbox .actions label, .bookmark .user, div.comment, .splash .module div.account, .faq .example, .guideline .example, form dl {
 	border: var(--border-width) solid var(--border-interactive-card);
 	border-radius: var(--rounded);
 }
@@ -390,17 +390,38 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 #bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
 #bookmark-symbols-key dt img[alt*="Public"] { background-position: -125px -50px }
 #bookmark-symbols-key dt img[alt*="Private"] { background-position: -175px -50px }
-#bookmark-symbols-key dt img[alt="Hidden"] { background-position: -150px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
-#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt*="Hidden"] { background-position: -150px -50px }
+#symbols-key>dt>img { display: none }
+#symbols-key>dt:before {
+    font-size: 25px;
+    content: "\25a8\25A2\25A2\25A2";
+    word-break: break-all;
+    display: block;
+    width: 2em;
+    line-height: 1;
+}
+#symbols-key>dt:nth-of-type(2):before { content: "\25A2\25a8\25A2\25A2" }
+#symbols-key>dt:nth-of-type(3):before { content: "\25A2\25A2\25a8\25A2" }
+#symbols-key>dt:nth-of-type(4):before { content: "\25A2\25A2\25A2\25a8" }
+#symbols-key dl dt img[alt="G"] { background-position: -50px -25px }
+#symbols-key dl dt img[alt="T"] { background-position: 0px -25px }
+#symbols-key dl dt img[alt="M"] { background-position: -75px -25px }
+#symbols-key dl dt img[alt="E"] { background-position: -25px -25px }
+#symbols-key dl dt img[alt*="blank"] { 
+    background-color: var(--background-secondary);
+    background-position: -150px 0px 
+}
+#symbols-key dl dt img[alt="F/F"] { background-position: -25px 0px }
+#symbols-key dl dt img[alt="F/M"] { background-position: -75px 0px }
+#symbols-key dl dt img[alt="Gen"] { background-position: -50px 0px }
+#symbols-key dl dt img[alt="M/M"] { background-position: 0px 0px }
+#symbols-key dl dt img[alt="Multi"] { background-position: -100px -0px }
+#symbols-key dl dt img[alt="Other"] { background-position: -125px 0px }
+#symbols-key dl dt img[alt*="questioned exclamation"] { background-position: -125px -25px }
+#symbols-key dl dt img[alt="exclamation mark"] { background-position: -150px -25px }
+#symbols-key dl dt img[alt="globe"] { background-position: -75px -50px }
+#symbols-key dl dt img[alt*="stop"] { background-position: -100px -25px }
+#symbols-key dl dt img[alt="ticky"] { background-position: -175px -25px }
 .icon[src="/images/skins/iconsets/default/icon_user.png"], .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"], #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"] { background-image: url(https://i.imgur.com/T0jO3kZ.png) }
 .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 100px 0 0 100px }
 .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 55px 0 0 55px }
@@ -553,8 +574,10 @@ span.disabled {
 	cursor: not-allowed;
 }
 /* button "details" inside label */
-label.action > a {
+label.action > a, label.action>a:link {
+    color:var(--text-button);
 	margin-left: var(--spacing-1);
+    padding-left: .25em;
 	padding-right: var(--spacing-1);
 }
 .announcement input[type="submit"], .announcement .action { background: var(--background-button-opaque) }
@@ -1332,6 +1355,10 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
     .javascript form.filters { right: -14em }
     /* pages adjustments */
     .faq .heading .actions a { margin-top: var(--spacing-1) }
+    dl#symbols-key dd { margin-top: -30px }
+    #symbols-key>dt:before { width: 4em }
+    #symbols-key>dt:nth-of-type(2):before { content: "\25A2\25A2\25a8\25A2" }
+    #symbols-key>dt:nth-of-type(3):before { content: "\25A2\25a8\25A2\25A2" }
     .skins .primary .icon { background-position: -10px -185px }
     #main.invitations-manage { overflow-x: auto }
     .blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {

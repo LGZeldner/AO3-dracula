@@ -172,6 +172,11 @@ fieldset, form dl {
 p select, p select+input { margin-bottom: 0 }  
 .javascript form.filters { right: -14em }
 .faq .heading .actions a { margin-top: 0.25rem }
+dl#symbols-key dd { margin: 0 auto auto 0 }
+dl#symbols-key dl dd { margin: -25px auto 20px 35px}
+#symbols-key>dt:before { width: 4em }
+#symbols-key>dt:nth-of-type(2):before { content: "\25A2\25A2\25a8\25A2" }
+    #symbols-key>dt:nth-of-type(3):before { content: "\25A2\25a8\25A2\25A2" }
 .skins .primary .icon { background-position: -10px -185px }
 #main.invitations-manage { overflow-x: auto }
 .blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {
