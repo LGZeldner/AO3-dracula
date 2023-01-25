@@ -358,6 +358,7 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
     border-top: var(--border-width) solid transparent;
 }
 .home .header h2, .faq .categories h3 {
+    border-width: var(--border-width);
 	border-image: var(--border-pink-yellow);
 }
 .chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
@@ -417,7 +418,7 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 /*
 *< main font */
 body, 
-.toggled form, .dynamic form, .secondary, .dropdown, .bookmark .user .meta .tag, span.unread, .replied, span.claimed, .actions span.defaulted, blockquote, pre, .userstuff li, .userstuff ol ul li, #show_signups, #hide_signups, .filters h4.heading, input, textarea, select, button {
+.toggled form, .dynamic form, .secondary, .dropdown, .bookmark .user .meta .tag, span.unread, .replied, span.claimed, .actions span.defaulted, blockquote, pre, .userstuff li, .userstuff ol ul li, #show_signups, #hide_signups, .filters h4.heading, input, textarea, select, button, .heading .actions, .heading .action, .heading span.actions, .prompt .blurb h6 {
     font-family: var(--font-service);    
     font-weight: inherit;   
 }
@@ -1099,6 +1100,9 @@ ul.tree li { margin-top: 0 }
 }
 /*
 *< faq */
+.faq .heading .actions a {
+    background: var(--background-button-opaque);
+}
 /*
 *< news */
 /* news blurbs on the main */
@@ -1197,6 +1201,7 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
       font-size: var(--font-md);
       content: "\21AA";
     }
+    #header #search .text { max-width: 10em }
     #header #search .submit.actions {
         position: relative;
         display: inline-block;
@@ -1322,10 +1327,11 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
       margin-left: 0;
       margin-right: 0;
     }
-    p select, p select+input { margin-bottom: var(--spacing-2) }  
+    p select, p select+input { margin-bottom: 0 }  
     /* filters */
     .javascript form.filters { right: -14em }
     /* pages adjustments */
+    .faq .heading .actions a { margin-top: var(--spacing-1) }
     .skins .primary .icon { background-position: -10px -185px }
     #main.invitations-manage { overflow-x: auto }
     .blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {

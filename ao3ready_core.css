@@ -128,6 +128,7 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
     border-top: 0.125em solid transparent;
 }
 .home .header h2, .faq .categories h3 {
+    border-width: 0.125em;
 	border-image: linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
 }
 .chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
@@ -183,7 +184,7 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 #main.error-503-maintenance { background-image: url(https://i.imgur.com/7Glgcp7.png) }
 #main.session { background-image: url(https://i.imgur.com/CXD6gn5.png) }
 body, 
-.toggled form, .dynamic form, .secondary, .dropdown, .bookmark .user .meta .tag, span.unread, .replied, span.claimed, .actions span.defaulted, blockquote, pre, .userstuff li, .userstuff ol ul li, #show_signups, #hide_signups, .filters h4.heading, input, textarea, select, button {
+.toggled form, .dynamic form, .secondary, .dropdown, .bookmark .user .meta .tag, span.unread, .replied, span.claimed, .actions span.defaulted, blockquote, pre, .userstuff li, .userstuff ol ul li, #show_signups, #hide_signups, .filters h4.heading, input, textarea, select, button, .heading .actions, .heading .action, .heading span.actions, .prompt .blurb h6 {
     font-family: 'IBM Plex Sans', 'DejaVu Sans', 'Helvetica Neue', 'Trebuchet MS', Helvetica, sans-serif;    
     font-weight: inherit;   
 }
@@ -760,6 +761,7 @@ ul.tree li { margin-top: 0 }
     border-left: 1px solid #4c5067;
 	margin-left: 0.25rem;
 }
+.faq .heading .actions a { background: #383435 }
 .splash .news li { 	padding: 0.25rem 0.75rem }
 .news dl.meta { margin-bottom: 0.5rem }
 .admin .header h3.landmark { font-size: 0 }

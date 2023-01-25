@@ -46,7 +46,8 @@
 #greeting .navigation.actions a[href*="/users/logout"]:after {
     font-size: 1rem;
     content: "\21AA";
-}    
+}
+#header #search .text { max-width: 10em }    
 #header #search .submit.actions {
     position: relative;
     display: inline-block;
@@ -168,8 +169,9 @@ fieldset, form dl {
     margin-left: 0;
     margin-right: 0;
 }
-p select, p select+input { margin-bottom: 0.5rem }  
+p select, p select+input { margin-bottom: 0 }  
 .javascript form.filters { right: -14em }
+.faq .heading .actions a { margin-top: 0.25rem }
 .skins .primary .icon { background-position: -10px -185px }
 #main.invitations-manage { overflow-x: auto }
 .blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {
