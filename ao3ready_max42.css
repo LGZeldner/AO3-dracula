@@ -57,7 +57,7 @@
     content: "\21B5";
     font-size: 1rem;
     position: absolute;
-    top: 10%;
+    top: 0;
 }
 #header #search .submit.actions:hover { background-color: rgba(255, 255, 255, .09) }
 #header #search .button:hover { background: none }
@@ -103,10 +103,10 @@ ul.work.navigation.actions {
     top: 0;
     right: 0;
     left: 0;
-    bottom: unset;
+    bottom: initial;
 }
 #chapter_index {
-    top: unset;
+    top: initial;
     bottom: 0;
 }
 #chapter_index p {
@@ -116,7 +116,7 @@ ul.work.navigation.actions {
 #chapter_index select { 
     margin-top: 0.5rem;
     width: 100%;
-    max-width: fit-content
+    max-width: 11rem
 }
 #chapter_index li:last-child a { 
     font-size: 0;
