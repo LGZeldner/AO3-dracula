@@ -78,7 +78,7 @@ li.blurb, .blurb .blurb { padding: 0.5em }
 .blurb ul.required-tags li+li+li, .blurb ul.required-tags li+li+li+li { position: static }
 .bookmark p.status {
     margin: 0;
-    margin-right: 3em;
+    margin-right: 4em;
     float: right;
 }
 .bookmark span.count {
@@ -92,9 +92,9 @@ li.blurb, .blurb .blurb { padding: 0.5em }
     font-size: 0.875rem;
     width: 4em;
     text-align: end;
+    line-height: 1;
 }
 .bookmark .user .byline, .bookmark .own.user .byline { margin-right: 3em }
-
 ul.work.navigation.actions { 
     margin-bottom: 0.5rem;
     position: relative;
