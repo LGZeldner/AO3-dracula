@@ -349,9 +349,13 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 	background-image: linear-gradient(135deg, var(--text-notice) 0%, var(--text-approve) 100%);
 }
 #modal .content, .userstuff h3:first-of-type, .chapter.preface:first-child {
-	border-color: transparent;
-    border-width: var(--border-width);
+    border: 0;
+    border-bottom: var(--border-width) solid transparent;
     border-image: var(--border-accent-gradient);
+}
+.chapter.preface:first-child {
+    border-bottom: 0;
+    border-top: var(--border-width) solid transparent;
 }
 .home .header h2, .faq .categories h3 {
 	border-image: var(--border-pink-yellow);

@@ -100,16 +100,56 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 	border-color: #80ffea;
 	background-image: linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
 }
+.announcement .thermometer .track {
+	background-image: -o-linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
+}
+.announcement .thermometer .track {
+	background-image: -moz-linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
+}
+.announcement .thermometer .track {
+	background-image: -webkit-linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
+}
 #modal .content, .userstuff h3:first-of-type, .chapter.preface:first-child {
-	border-color: transparent;
-    border-width: 0.125em;
-    border-image: linear-gradient(135deg, #9580ff 0%, #ff80bf 100%) 30 stretch;
+    border: 0;
+    border-bottom: 0.125em solid transparent;
+	border-image: linear-gradient(135deg, #9580ff 0%, #ff80bf 100%) 30 stretch;
+}
+#modal .content, .userstuff h3:first-of-type, .chapter.preface:first-child {
+    border-image: -o-linear-gradient(135deg, #9580ff 0%, #ff80bf 100%) 30 stretch;
+}
+#modal .content, .userstuff h3:first-of-type, .chapter.preface:first-child {
+    border-image: -moz-linear-gradient(135deg, #9580ff 0%, #ff80bf 100%) 30 stretch;
+}
+#modal .content, .userstuff h3:first-of-type, .chapter.preface:first-child {
+    border-image: -webkit-linear-gradient(135deg, #9580ff 0%, #ff80bf 100%) 30 stretch;
+}
+.chapter.preface:first-child {
+    border-bottom: 0;
+    border-top: 0.125em solid transparent;
 }
 .home .header h2, .faq .categories h3 {
 	border-image: linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
 }
 .chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
 	border-image: linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
+}
+.home .header h2, .faq .categories h3 {
+	border-image: -o-linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
+}
+.chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
+	border-image: -o-linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
+}
+.home .header h2, .faq .categories h3 {
+	border-image: -moz-linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
+}
+.chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
+	border-image: -moz-linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
+}
+.home .header h2, .faq .categories h3 {
+	border-image: -webkit-linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
+}
+.chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
+	border-image: -webkit-linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
 }
  #header .logo, #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"], img[title="Restricted"], a[href="/users/orphan_account"] img.icon, .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .icon[src="/images/skins/iconsets/default/icon_user.png"] {
     width:0;
