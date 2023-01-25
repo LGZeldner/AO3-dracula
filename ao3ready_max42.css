@@ -176,8 +176,9 @@ dl#symbols-key dd { margin: 0 auto auto 0 }
 dl#symbols-key dl dd { margin: -25px auto 20px 35px}
 #symbols-key>dt:before { width: 4em }
 #symbols-key>dt:nth-of-type(2):before { content: "\25A2\25A2\25a8\25A2" }
-    #symbols-key>dt:nth-of-type(3):before { content: "\25A2\25a8\25A2\25A2" }
-.skins .primary .icon { background-position: -10px -185px }
+#symbols-key>dt:nth-of-type(3):before { content: "\25A2\25a8\25A2\25A2" }
+.admin .primary .icon { background-position: -75px -375px }
+.skins .primary .icon { background-position: -75px -450px }
 #main.invitations-manage { overflow-x: auto }
 .blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {
     width: auto;

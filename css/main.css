@@ -384,7 +384,7 @@ a[href="/users/orphan_account"] img.icon {
     background: url(https://i.imgur.com/yWWIqpS.png) 0 0/contain no-repeat;
 }
 p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explicit, .required-tags .rating-mature, .required-tags .rating-notrated, .required-tags .warning-no, .required-tags .rating-teen, .required-tags .category-none, .required-tags .category-femslash, .required-tags .category-gen, .required-tags .category-het, .required-tags .category-multi, .required-tags .category-other, .required-tags .category-slash, .required-tags .complete-no, .required-tags .complete-yes, .required-tags .warning-yes, .required-tags .warning-choosenotto, .required-tags .external-work, .status .count, .status .private .text, .status .public, .status .hidden, .status .rec, .index .skins .icon, .index .mystery .icon, .index .tag .icon, .index .tagset .icon, .comment .icon .visitor, .comment .icon .anonymous, .abbreviated .icon .anonymous, .abbreviated .icon .visitor, .admin .primary .icon, .skins .primary .icon, .tag .primary .icon, .tagset .primary .icon, a.rss span, #symbols-key dl dt img, #bookmark-symbols-key dt img { 
-    background-image: url(https://i.imgur.com/8LYaHE3.png); 
+    background-image: url(https://i.imgur.com/u7bOQEy.png); 
     background-size: auto;
 }
 #bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
@@ -1359,7 +1359,8 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
     #symbols-key>dt:before { width: 4em }
     #symbols-key>dt:nth-of-type(2):before { content: "\25A2\25A2\25a8\25A2" }
     #symbols-key>dt:nth-of-type(3):before { content: "\25A2\25a8\25A2\25A2" }
-    .skins .primary .icon { background-position: -10px -185px }
+    .admin .primary .icon { background-position: -75px -375px }
+    .skins .primary .icon { background-position: -75px -450px }
     #main.invitations-manage { overflow-x: auto }
     .blurb dl.tags dt, .blurb dl.tags dd, dl.meta dt, dl.meta dd, .alphabet .listbox li, .media .listbox {
       width: auto;
