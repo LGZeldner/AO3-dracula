@@ -382,6 +382,20 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
     background-image: url(https://i.imgur.com/8LYaHE3.png); 
     background-size: auto;
 }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt*="Public"] { background-position: -125px -50px }
+#bookmark-symbols-key dt img[alt*="Private"] { background-position: -175px -50px }
+#bookmark-symbols-key dt img[alt="Hidden"] { background-position: -150px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
+#bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
 .icon[src="/images/skins/iconsets/default/icon_user.png"], .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"], #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"] { background-image: url(https://i.imgur.com/T0jO3kZ.png) }
 .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 100px 0 0 100px }
 .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 55px 0 0 55px }
@@ -975,6 +989,7 @@ tr:hover, td:hover, td, tbody th, tbody tr:hover th, .ui-datepicker tbody tr, .u
 #header #search .text {
 	padding: 0.15em .25em;
 	border: 1px solid var(--accent);
+    margin-right: 0;
 }
 /* dropdown menu */
 #header .menu li { border-color:  var(--hover) }
@@ -1155,14 +1170,14 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
       float: none;
     }
     #header .search {
-      display: block;
       float: none;
     }
-    #greeting .navigation.actions a[href*="/users/logout"] {
+    #greeting .navigation.actions a[href*="/users/logout"], #header #search .button {
       font-size: 0;
       height: 1.386rem;
       border-radius: var(--rounded);
     }
+    #header #search .button { height: 1.5rem }
     #greeting .navigation.actions a[href*="/users/logout"]:before {
       font-size: var(--font-sm);
       content: "\2002";
@@ -1176,9 +1191,22 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
     }
     #greeting .navigation.actions a[href*="/users/logout"]:after {
       font-size: var(--font-md);
-      font-weight: bold;
       content: "\21AA";
     }
+    #header #search .submit.actions {
+        position: relative;
+        display: inline-block;
+        border-radius: 0.25em;
+        padding: 0 .25em;
+    }
+    #header #search .submit.actions:before {
+        content: "\21B5";
+        font-size: 1rem;
+        position: absolute;
+        top: 10%;
+    }
+    #header #search .submit.actions:hover { background-color: rgba(255, 255, 255, .09) }
+    #header #search .button:hover { background: none }
     /* blurbs */
     li.blurb, .blurb .blurb { padding: 0.5em }
     .blurb .header .heading, .blurb .header ul { margin: 0 }

@@ -1,8 +1,8 @@
 .javascript, #outer { background: #21222c }  
-/* ? add separate font styles 
+/* ? add separate font styles */ 
 #modal .userstuff, #outer .userstuff { }
 .userstuff p { }
-*/   
+  
 .comment h4.byline {
     padding-left: 0;
     margin-left: 58px
@@ -24,14 +24,14 @@
     float: none;
 }
 #header .search {
-    display: block;
     float: none;
 }
-#greeting .navigation.actions a[href*="/users/logout"] {
+#greeting .navigation.actions a[href*="/users/logout"], #header #search .button {
     font-size: 0;
     height: 1.386rem;
     border-radius: .25em;
 }
+#header #search .button { height: 1.5rem }
 #greeting .navigation.actions a[href*="/users/logout"]:before {
     font-size: 0.875rem;
     content: "\2002";
@@ -39,15 +39,28 @@
     position: relative;
     left: 0.5em;
     display: inline-block;
-    border: 0.1rem solid #f8f8f2;
+    border: 0.1rem solid #f8f8f2; 
     border-radius: .25em 0 0 .25em;
     border-right-width: 0;
 }
 #greeting .navigation.actions a[href*="/users/logout"]:after {
     font-size: 1rem;
-    font-weight: bold;
     content: "\21AA";
 }    
+#header #search .submit.actions {
+    position: relative;
+    display: inline-block;
+    border-radius: 0.25em;
+    padding: 0 .25em;
+}
+#header #search .submit.actions:before {
+    content: "\21B5";
+    font-size: 1rem;
+    position: absolute;
+    top: 10%;
+}
+#header #search .submit.actions:hover { background-color: rgba(255, 255, 255, .09) }
+#header #search .button:hover { background: none }
 li.blurb, .blurb .blurb { padding: 0.5em }
 .blurb .header .heading, .blurb .header ul { margin: 0 }
 .blurb > .header h4.heading { padding-top: 30px } 

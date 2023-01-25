@@ -645,6 +645,7 @@ tr:hover, td:hover, td, tbody th, tbody tr:hover th, .ui-datepicker tbody tr, .u
 #header #search .text {
 	padding: 0.15em .25em;
 	border: 1px solid #9580ff;
+    margin-right: 0;
 }
 #header .menu li { border-color:  rgba(255, 255, 255, .09)}
 #dashboard.own { padding: 0 }
