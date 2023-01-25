@@ -4,20 +4,12 @@
     border-bottom: 0.125rem solid #ff80bf;
     padding-bottom: 0;
 }
+#dashboard ul { font-size: 0 }
+#dashboard ul.navigation.actions li { font-size: 0.875rem }
 #dashboard ul.navigation.actions li a {
     border-right: 0;
     border-bottom: 0.0625rem solid #4c5067;
     padding: 0 0.25rem 0.0625rem 0.25rem;
-}
-#dashboard li {
-    display: block;
-    float: left;
-    margin: 0;
-}
-#dashboard ul:after {
-    content: "";
-    clear: both;
-    display: table;
 }
 #dashboard .pseud { display: contents }
 #dashboard .expandable.secondary {
@@ -28,4 +20,5 @@
 #dashboard ul.navigation.actions li a[title*="Switcher"] {
     border-color: transparent;
     border-radius: .25rem;
+    vertical-align: baseline;
 }

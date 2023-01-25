@@ -314,7 +314,7 @@ span.unread {
 *< no border */
 #footer, #modal, .draft .chapter.preface, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, 
 /* try to avoid three-layer forms */
-form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #dashboard ul:first-of-type { border: 0 }
+form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #dashboard > ul:first-of-type { border: 0 }
 .dropdown #small_login .footnote a { border-bottom: 0 }
 .chapter.preface:last-child { border-top: 0 }
 .action, .action:hover, label.action, label.action:hover { border-color: var(--background-main) }
@@ -362,22 +362,26 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 /*
 *< recolored pictures */
  /* replace pictures completely */
- #header .logo, #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"], img[title="Restricted"], a[href="/users/orphan_account"] img.icon, .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .icon[src="/images/skins/iconsets/default/icon_user.png"] {
+ #header .logo, #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"], img[title="Restricted"], a[href="/users/orphan_account"] img.icon, .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .icon[src="/images/skins/iconsets/default/icon_user.png"], #symbols-key dl dt img, #bookmark-symbols-key dt img  {
     width:0;
 	height:0;
-	padding:15px 0 0 15px;
+	padding:25px 0 0 25px;
 	background-size: contain;
  }
 #header .logo { background: url(https://i.imgur.com/TVDq1m8.png) 0 0/contain no-repeat }
 img[title="Restricted"] {
     background: url(https://i.imgur.com/VCvPIxa.png) 0 0/contain no-repeat;
+	padding: 0.875rem 0 0 0.875rem;
     bottom: 0.1em;   
 }
 a[href="/users/orphan_account"] img.icon {
 	padding:100px 0 0 100px;
     background: url(https://i.imgur.com/yWWIqpS.png) 0 0/contain no-repeat;
 }
-p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explicit, .required-tags .rating-mature, .required-tags .rating-notrated, .required-tags .warning-no, .required-tags .rating-teen, .required-tags .category-none, .required-tags .category-femslash, .required-tags .category-gen, .required-tags .category-het, .required-tags .category-multi, .required-tags .category-other, .required-tags .category-slash, .required-tags .complete-no, .required-tags .complete-yes, .required-tags .warning-yes, .required-tags .warning-choosenotto, .required-tags .external-work, .status .count, .status .private .text, .status .public, .status .hidden, .status .rec, .index .skins .icon, .index .mystery .icon, .index .tag .icon, .index .tagset .icon, .comment .icon .visitor, .comment .icon .anonymous, .abbreviated .icon .anonymous, .abbreviated .icon .visitor, .admin .primary .icon, .skins .primary .icon, .tag .primary .icon, .tagset .primary .icon, a.rss span { background-image: url(https://i.imgur.com/7FoC4hw.png) }
+p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explicit, .required-tags .rating-mature, .required-tags .rating-notrated, .required-tags .warning-no, .required-tags .rating-teen, .required-tags .category-none, .required-tags .category-femslash, .required-tags .category-gen, .required-tags .category-het, .required-tags .category-multi, .required-tags .category-other, .required-tags .category-slash, .required-tags .complete-no, .required-tags .complete-yes, .required-tags .warning-yes, .required-tags .warning-choosenotto, .required-tags .external-work, .status .count, .status .private .text, .status .public, .status .hidden, .status .rec, .index .skins .icon, .index .mystery .icon, .index .tag .icon, .index .tagset .icon, .comment .icon .visitor, .comment .icon .anonymous, .abbreviated .icon .anonymous, .abbreviated .icon .visitor, .admin .primary .icon, .skins .primary .icon, .tag .primary .icon, .tagset .primary .icon, a.rss span, #symbols-key dl dt img, #bookmark-symbols-key dt img { 
+    background-image: url(https://i.imgur.com/8LYaHE3.png); 
+    background-size: auto;
+}
 .icon[src="/images/skins/iconsets/default/icon_user.png"], .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"], #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"] { background-image: url(https://i.imgur.com/T0jO3kZ.png) }
 .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 100px 0 0 100px }
 .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 55px 0 0 55px }
@@ -1095,6 +1099,9 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
 @media only screen and (max-width: 62em) {
     #main.dashboard { margin: auto }
     /* dashboard */
+    /* fix space between inline elements */
+    #dashboard ul { font-size: 0 }
+    #dashboard ul.navigation.actions li { font-size: var(--font-sm) }
     #dashboard .current { 
       border-right: 0;
       border-bottom: .125rem solid var(--text-tab-current);
@@ -1105,16 +1112,6 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
       border-bottom: 0.0625rem solid var(--border-alt);
       padding: 0 var(--spacing-1) 0.0625rem var(--spacing-1);
     }
-    #dashboard li {
-      display: block;
-      float: left;
-      margin: 0;
-    }
-    #dashboard ul:after {
-      content: "";
-      clear: both;
-      display: table;
-    }
     #dashboard .pseud { display: contents }
     #dashboard .expandable.secondary {
       display: block;
@@ -1124,6 +1121,7 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
     #dashboard ul.navigation.actions li a[title*="Switcher"] {
       border-color: transparent;
       border-radius: var(--rounded);
+      vertical-align: baseline;
     }
   }
   @media only screen and (max-width: 42em) {
