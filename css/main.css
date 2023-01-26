@@ -1303,7 +1303,6 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
       padding: 0;
     }
     #chapter_index select { 
-      margin-top: var(--spacing-2);
       width: 100%;
       max-width: 11rem
     }
