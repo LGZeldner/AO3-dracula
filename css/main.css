@@ -490,6 +490,8 @@ ul.notes li:before, .error ul li:before, .notice ul li:before, .caution ul li:be
     padding-right: 0.25em;
 }
 /* keep list marker & paragraph together  */
+.userstuff ol ul { padding: 0 var(--spacing-1) }
+.userstuff ol ul li { margin-inline-start: var(--spacing-1) }
 .userstuff ul li p { display: inline }
 /**3** interactive */
 /*

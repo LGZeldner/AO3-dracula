@@ -260,6 +260,8 @@ ul.notes li:before, .error ul li:before, .notice ul li:before, .caution ul li:be
     content: "—";
     padding-right: 0.25em;
 }
+.userstuff ol ul { padding: 0 0.25em }
+.userstuff ol ul li { margin-inline-start: 0.25em }
 .userstuff ul li p { display: inline }
 #dashboard a { 	color: #f8f8f2 }
 #dashboard a:hover {
