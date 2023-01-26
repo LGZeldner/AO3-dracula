@@ -129,10 +129,7 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 }
 .home .header h2, .faq .categories h3 {
     border-width: 0.125rem;
-	border-image: linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
-}
-.chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
-	border-image: linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
+	border-image: -webkit-linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
 }
 .home .header h2, .faq .categories h3 {
 	border-image: -o-linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
@@ -147,10 +144,13 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 	border-image: -moz-linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
 }
 .home .header h2, .faq .categories h3 {
-	border-image: -webkit-linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
+	border-image: linear-gradient(135deg, #ff80bf 0%, #ffff80 100%) 30 stretch;
 }
 .chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
 	border-image: -webkit-linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
+}
+.chapter .preface + .userstuff h3:first-of-type, .userstuff .toc + #faq h3:first-child {
+	border-image: linear-gradient(135deg, #80ffea 0%, #9580ff 100%) 30 stretch;
 }
  #header .logo, #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"], img[title="Restricted"], a[href="/users/orphan_account"] img.icon, .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .icon[src="/images/skins/iconsets/default/icon_user.png"], #symbols-key dl dt img, #bookmark-symbols-key dt img {
     width:0;

@@ -77,6 +77,15 @@ li.blurb, .blurb .blurb { padding: 0.5em }
     vertical-align: middle
 }
 .blurb ul.required-tags li+li+li, .blurb ul.required-tags li+li+li+li { position: static }
+.blurb ul.required-tags li:nth-child(2) {
+    position: relative;
+    left: 28px;
+  }
+  .blurb ul.required-tags li:nth-child(3) {
+    position: relative;
+    left: initial;
+    right: 28px;
+  }
 .bookmark p.status {
     margin: 0;
     margin-right: 4em;
@@ -175,8 +184,6 @@ p select, p select+input { margin-bottom: 0 }
 dl#symbols-key dd { margin: 0 auto auto 0 }
 dl#symbols-key dl dd { margin: -25px auto 20px 35px}
 #symbols-key>dt:before { width: 4em }
-#symbols-key>dt:nth-of-type(2):before { content: "\25A2\25A2\25a8\25A2" }
-#symbols-key>dt:nth-of-type(3):before { content: "\25A2\25a8\25A2\25A2" }
 .admin .primary .icon { background-position: -75px -375px }
 .skins .primary .icon { background-position: -75px -450px }
 #main.invitations-manage { overflow-x: auto }

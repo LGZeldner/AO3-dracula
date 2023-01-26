@@ -1255,6 +1255,15 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
       vertical-align: middle
     }
     .blurb ul.required-tags li+li+li, .blurb ul.required-tags li+li+li+li { position: static }
+    .blurb ul.required-tags li:nth-child(2) {
+      position: relative;
+      left: 28px;
+    }
+    .blurb ul.required-tags li:nth-child(3) {
+      position: relative;
+      left: auto;
+      right: 28px;
+    }
     .bookmark p.status {
       margin: 0;
       margin-right: 4em;
