@@ -25,9 +25,9 @@ This part is covering some available on AO3 media queries. More precisely, just 
 
 ![Screenshot choose 42](./Screenshot_max42.png)
 
-6. Optional - mostly for tablets. Create new site skin in the same way as described above, but use the contents of the [`ao3ready_max62.css`](./ao3ready_max62.css) and choose `only screen and (max-width: 62em)`.
+5. Optional - mostly for tablets. Create new site skin in the same way as described above, but use the contents of the [`ao3ready_max62.css`](./ao3ready_max62.css) and choose `only screen and (max-width: 62em)`.
 ![Screenshot choose 62](./Screenshot_max62.png)
-7. Combine **all your skins**.
+6. Combine **all your skins**.
     - Create new site skin with a title, for example, `Dracula for AO3 combined - [your username]`.
     - Scroll all the way down to Advanced, click `Show ↓`
     - In the `Parent Skins` group, click `Add parent skin`, type in the field title of the skin you created first, then click `Add parent skin` again and add second and (optionally) third skin.
