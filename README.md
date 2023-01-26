@@ -35,6 +35,18 @@ This part is covering some available on AO3 media queries. More precisely, just 
     As you see on the screenshot above, you could add even more skins.
     - Click `Submit` and then `Use` after redirect.
 
+### (Optional) Fonts
+I added IBM Plex Sans and Mono fonts into css, because I like these. Due to AO3 policy, to display them, you should add those fonts yourself. There are two ways to do this that I know of:
+1. Use Stylus browser extension
+    - Add style for archiveofourown.org, copy and paste the following code into it
+```css
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+```
+2. Download and install fonts on your device
+    - [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans)
+    - [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono)
+
 ## Related
 This skin would never come to existence without the following awesome projects.
 1. [The Organization for Transformative Works (OTW) - Archive Of Our Own (AO3) Project](https://github.com/otwcode/otwarchive)
