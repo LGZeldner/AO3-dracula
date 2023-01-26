@@ -312,7 +312,7 @@ span.unread {
 .actions .reindex a, #greeting .icon, #dashboard, #dashboard.own { border-color: var(--accent) }
 /*
 *< no border */
-#footer, #modal, .draft .chapter.preface, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, #symbols-key dl,
+#footer, #modal, .draft .chapter.preface, .chapter.actions + .chapter.preface.group, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, #symbols-key dl,
 /* try to avoid three-layer forms */
 form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #dashboard > ul:first-of-type { border: 0 }
 .dropdown #small_login .footnote a { border-bottom: 0 }
