@@ -87,7 +87,7 @@
 #header #search .button:hover { background: none }
 li.blurb, .blurb .blurb { padding: 0.5em }
 .blurb .header .heading, .blurb .header ul { margin: 0 }
-.blurb[id*="external"] .fandoms.heading { min-height: auto }
+.blurb[class*="external"] .fandoms.heading { min-height: auto }
 .blurb .header p.notice { margin-top: 0.5rem }
 .blurb > .header h4.heading { padding-top: 30px } 
 .picture.blurb > .header h4.heading, .blurb > .picture.header h4.heading { padding-top: 1.125rem } 
