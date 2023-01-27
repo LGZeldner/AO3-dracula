@@ -71,7 +71,7 @@ span.unread {
 }
 #header #greeting img, #header .heading a, #header .heading a:visited, #header form, .draggable, .droppable, span.requested, a.work, .blurb h4 a:link, .blurb h4 img, .splash .module h3, .splash .browse li a:before, a.cloud8, #tos_prompt .heading { color: #9580ff }
 .actions .reindex a, #greeting .icon, #dashboard, #dashboard.own { border-color: #9580ff }
-#footer, #modal, .draft .chapter.preface, .chapter.actions + .chapter.preface.group, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, #symbols-key dl, 
+#footer, #modal, .draft .chapter.preface, .chapter.actions + .chapter.preface.group, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, #symbols-key dl, .blurb[id*="external"] .header.module,
 form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #dashboard > ul:first-of-type { border: 0 }
 .dropdown #small_login .footnote a { border-bottom: 0 }
 .chapter.preface:last-child { border-top: 0 }
@@ -771,6 +771,7 @@ rect[fill="#993333"] {
 .nominations .rejected, .nominations .rejected:hover, span.symbol.rejected, span.symbol.rejected:hover { background: #ff9580 }
 .nominations .unreviewed, .nominations .unreviewed:hover, span.symbol.unreviewed, span.symbol.unreviewed:hover { background: #9580ff }
 .blurb .header .heading { margin-right: 6em }
+.blurb[id*="external"] .fandoms.heading { min-height: 1rem }
 dl.meta, .news dl.meta { padding: 0.5rem 0.5rem 0 }
 .userstuff blockquote {
     margin-inline-start: 0;

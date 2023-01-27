@@ -312,7 +312,7 @@ span.unread {
 .actions .reindex a, #greeting .icon, #dashboard, #dashboard.own { border-color: var(--accent) }
 /*
 *< no border */
-#footer, #modal, .draft .chapter.preface, .chapter.actions + .chapter.preface.group, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, #symbols-key dl,
+#footer, #modal, .draft .chapter.preface, .chapter.actions + .chapter.preface.group, div.comment fieldset, .dynamic div.comment form, .simple.search fieldset, .filters dt, .comment div.icon, .actions label, .actions label:hover, span.action, span.action:hover, input[type="file"], thead, thead tr, thead th, thead td, thead tr:hover, thead th:hover, thead tr:hover th, #symbols-key dl, .blurb[id*="external"] .header.module,
 /* try to avoid three-layer forms */
 form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #dashboard > ul:first-of-type { border: 0 }
 .dropdown #small_login .footnote a { border-bottom: 0 }
@@ -1077,6 +1077,7 @@ rect[fill="#993333"] {
 *< work */
 /* align meta before work */
 .blurb .header .heading { margin-right: 6em }
+.blurb[id*="external"] .fandoms.heading { min-height: var(--spacing-4) }
 dl.meta, .news dl.meta { padding: var(--spacing-2) var(--spacing-2) 0 }
 .userstuff blockquote {
     margin-inline-start: 0;
@@ -1244,6 +1245,8 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
     /* blurbs */
     li.blurb, .blurb .blurb { padding: 0.5em }
     .blurb .header .heading, .blurb .header ul { margin: 0 }
+    .blurb[id*="external"] .fandoms.heading { min-height: auto }
+    .blurb .header p.notice { margin-top: var(--spacing-2) }
     .blurb > .header h4.heading { padding-top: 30px } /* work */
     .picture.blurb > .header h4.heading, .blurb > .picture.header h4.heading { padding-top: var(--spacing-4-5) } /* work */
     .picture.blurb > .header, .blurb > .picture.header { 
