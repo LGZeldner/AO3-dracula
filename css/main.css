@@ -260,7 +260,6 @@ li.unread.comment, #outer .reading h4.viewed, .reading h4.viewed, .dashboard .bo
 	border: 0;
 	color: var(--text-notice);
 }
-ul.actions + .notice { margin-right: 0.25em }
 /*
 *<<< caution */
 .alert .userstuff, .caution {
