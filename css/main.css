@@ -62,6 +62,7 @@ Table of Contents
 *< faq
 *< news
 **7** visited links
+**Extra** background fixes for dracula theme for AO3 & Kudosed and Seen history
 **8** media rules
 */
 /**0** fonts, colors, spacing */
@@ -1152,6 +1153,67 @@ a:visited:hover, .blurb h4 a:visited:hover, .listbox .heading a:visited:hover, .
 }
 .actions a:visited, .action a:visited, .action:visited, span.action a:visited, .listbox .heading span.action a:visited, .pagination.actions a:visited { color: var(--text-button) }
 a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker td a:visited, .ui-datepicker td a:visited:hover, a.tag:visited, a.tag:visited:hover, .action:visited:hover, .action a:visited:hover, .actions a:visited:hover, .listbox .heading span.action a:visited:hover, span.action a:visited:hover, span.action:hover, span.action:hover a:visited, .heading a.tag:visited, .heading a.tag:visited:hover { color: var(--text-main) }
+/**Extra** background fixes for dracula theme for AO3 & Kudosed and Seen history*/
+
+.kh-toggles {
+    background-color: var(--background-primary-alt);
+    border-color: var(--border-color);
+}
+
+/*bg fix for seen*/
+.marked-seen {
+  background: url("https://i.imgur.com/l9pDuAs.png") left repeat-y !important;
+    background-color: var(--background-card) !important;
+}
+/*bg fix for kudosed*/
+.has-kudos.marked-seen, .has-kudos {
+  background: url("https://i.imgur.com/JOVc9mY.png") left no-repeat, url("https://i.imgur.com/l9pDuAs.png") left repeat-y /*implying work also seen*/
+!important;
+    background-color: var(--background-card) !important;
+}
+/*bg fix for bookmarked*/
+.kh-highlight-bookmarked-yes .is-bookmarked {
+  background: url(https://i.imgur.com/kr8WQJE.png) right repeat-y !important;
+    background-color: var(--background-card) !important;
+}
+/*bg fix for bookmarked&seen*/
+.kh-highlight-bookmarked-yes .marked-seen.is-bookmarked {
+  background: url(https://i.imgur.com/kr8WQJE.png) right repeat-y,  url("https://i.imgur.com/l9pDuAs.png") left repeat-y !important;
+    background-color: var(--background-card) !important;
+}
+/*bg fix for bookmarked&kudosed*/
+.kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, .is-bookmarked, dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, dl.has-kudos.is-bookmarked {
+    background: url(https://i.imgur.com/kr8WQJE.png) right repeat-y, url("https://i.imgur.com/JOVc9mY.png") left no-repeat, url("https://i.imgur.com/l9pDuAs.png") left repeat-y !important;   
+    background-color: var(--background-card) !important;
+}
+/*border fix for new*/
+.kh-highlight-new-yes li.new-blurb {
+    border-left: 5px solid var(--purple) !important;
+}
+/*collapsed bookmarks*/
+
+.collapsed-blurb div.own.user.module.group {
+    margin-top: 1.5em;
+}
+
+/*settings*/
+#importexport-box {
+    border-color: var(--border-color);
+    background-color: var(--background-primary);
+}
+#importexport-box .kh-setting-option {
+    color: var(--text-normal);
+    border: 1px solid var(--background-secondary);
+    background-color: var(--background-primary);
+}
+#importexport-box .kh-setting-option.kh-setting-option-selected {
+    background-color: var(--background-primary-alt);
+    border-color: var(--background-primary-alt);
+}
+.kh-setting-options a:hover {
+    color: var(--text-normal);
+    background-color: var(--background-secondary);
+}
 /**8** media rules */
 @media only screen and (max-width: 62em) {
     #main.dashboard { margin: auto }
