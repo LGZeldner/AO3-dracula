@@ -1198,22 +1198,34 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
 
 /*settings*/
 #importexport-box {
-    border-color: var(--border-color);
-    background-color: var(--background-primary);
+    border-color: var(--background-main);
+    background-color: var(--background-main);
 }
 #importexport-box .kh-setting-option {
-    color: var(--text-normal);
+    color: var(--text-main);
     border: 1px solid var(--background-secondary);
-    background-color: var(--background-primary);
+    background-color: var(--background-main);
 }
 #importexport-box .kh-setting-option.kh-setting-option-selected {
-    background-color: var(--background-primary-alt);
-    border-color: var(--background-primary-alt);
+    background-color: var(--border-checkbox);
+    border-color: var(--border-checkbox);
 }
-.kh-setting-options a:hover {
-    color: var(--text-normal);
-    background-color: var(--background-secondary);
+#importexport-box input[type=button] {
+    color: var(--text-button);
+    border-color: var(--background-button);
+    background: var(--background-button);
 }
+#importexport-box a.kh-setting-option:hover, #importexport-box input[type=button]:hover {
+    color: var(--text-main);
+    border-color: var(--hover);
+    background-color: var(--hover);
+}
+@media screen and (max-width: 42em) {
+    .has-kudos.marked-seen, .has-kudos, .kh-highlight-bookmarked-yes .is-bookmarked, dl.is-bookmarked {
+        background-size: 20px !important;
+    }
+}
+
 /**8** media rules */
 @media only screen and (max-width: 62em) {
     #main.dashboard { margin: auto }
