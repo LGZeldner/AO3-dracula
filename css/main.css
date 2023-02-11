@@ -1156,42 +1156,56 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
 /**Extra** background fixes for dracula theme for AO3 & Kudosed and Seen history*/
 
 .kh-toggles {
-    background-color: var(--background-primary-alt);
-    border-color: var(--border-color);
+    background-color: var(--background-dropdown);
+    border-color: var(--background-dropdown);
 }
-
-/*bg fix for seen*/
-.marked-seen {
-  background: url("https://i.imgur.com/l9pDuAs.png") left repeat-y !important;
+/* remove pictures & return color to the bg */
+.marked-seen, 
+.kh-highlight-bookmarked-yes .is-bookmarked, dl.is-bookmarked, .is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.marked-seen, dl.is-bookmarked.marked-seen {
+    background-image: none !important;
     background-color: var(--background-card) !important;
 }
 /*bg fix for kudosed*/
-.has-kudos.marked-seen, .has-kudos {
-  background: url("https://i.imgur.com/JOVc9mY.png") left no-repeat, url("https://i.imgur.com/l9pDuAs.png") left repeat-y /*implying work also seen*/
-!important;
+.has-kudos.marked-seen, .has-kudos, 
+ dl.has-kudos.is-bookmarked,
+dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.has-kudos.marked-seen {
+  background: url("https://i.imgur.com/IZOeMAx.png") left no-repeat !important;
     background-color: var(--background-card) !important;
 }
-/*bg fix for bookmarked*/
-.kh-highlight-bookmarked-yes .is-bookmarked {
-  background: url(https://i.imgur.com/kr8WQJE.png) right repeat-y !important;
-    background-color: var(--background-card) !important;
+/* replace pictures with pseudo-elements */
+.marked-seen:before, .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;    
+    top: 0;
+    width: 40px;
+    height: 100%;    
 }
-/*bg fix for bookmarked&seen*/
-.kh-highlight-bookmarked-yes .marked-seen.is-bookmarked {
-  background: url(https://i.imgur.com/kr8WQJE.png) right repeat-y,  url("https://i.imgur.com/l9pDuAs.png") left repeat-y !important;
-    background-color: var(--background-card) !important;
+.marked-seen:before {
+    left: 0;
+    background-color: var(--background-seen);
 }
-/*bg fix for bookmarked&kudosed*/
-.kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, .is-bookmarked, dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, dl.has-kudos.is-bookmarked {
-    background: url(https://i.imgur.com/kr8WQJE.png) right repeat-y, url("https://i.imgur.com/JOVc9mY.png") left no-repeat, url("https://i.imgur.com/l9pDuAs.png") left repeat-y !important;   
-    background-color: var(--background-card) !important;
+.kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
+    right: 0;
+    visibility: visible;
+    background-color: var(--background-bookmarked);
+    background-image: repeating-linear-gradient(
+  135deg,
+  var(--background-bookmarked),
+  var(--background-bookmarked) 6px,
+  var(--border-alt) 2px,
+  var(--border-alt) 8px
+)
 }
+
 /*border fix for new*/
 .kh-highlight-new-yes li.new-blurb {
     border-left: 5px solid var(--purple) !important;
 }
 /*collapsed bookmarks*/
-
 .collapsed-blurb div.own.user.module.group {
     margin-top: 1.5em;
 }
@@ -1221,10 +1235,14 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
     background-color: var(--hover);
 }
 @media screen and (max-width: 42em) {
-    .has-kudos.marked-seen, .has-kudos, .kh-highlight-bookmarked-yes .is-bookmarked, dl.is-bookmarked {
+    .has-kudos.marked-seen, .has-kudos, dl.has-kudos.is-bookmarked,
+dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.has-kudos.marked-seen {
         background-size: 20px !important;
     }
+    .marked-seen:before, .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after { width: 20px }
 }
+
 
 /**8** media rules */
 @media only screen and (max-width: 62em) {
