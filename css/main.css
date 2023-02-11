@@ -211,6 +211,10 @@ Table of Contents
     --padding-button-md: 0.25em var(--spacing-2);
     --padding-button-lg: var(--spacing-1) var(--spacing-3);
 }
+:root {
+    --background-seen: var(--pink-transparent);
+    --background-bookmarked: var(--purple-transparent);
+}
 /**1** common rules (default skin overhaul) */
 /*
 *< background */
