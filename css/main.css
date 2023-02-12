@@ -1204,7 +1204,13 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
   var(--border-alt) 8px
 )
 }
-
+/* fix floated content */
+.reading.blurb .stats, .reading .user.module { float: none }
+.reading .user.module:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
 /*border fix for new*/
 .kh-highlight-new-yes li.new-blurb {
     border-left: 5px solid var(--purple) !important;
