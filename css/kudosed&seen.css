@@ -1,0 +1,117 @@
+/**Extra** background fixes for dracula theme for AO3 & Kudosed and Seen history*/
+:root {
+    --black: #21222c;
+    --greySecondary: #626784;
+    --white: #f8f8f2;
+    --purple: #9580ff;
+    --orange: #ffca80;
+    --orange-transparent: rgba(255,202,128,.1);
+    --pink-transparent: rgba(255,128,191,.1);
+    --purple-transparent: rgba(149,128,255,.1);
+    --background-main: var(--black);
+    --background-secondary: #333540; 
+    --background-dropdown: #35363F;
+    --background-card: #282a36;
+    --background-button: var(--orange-transparent);
+    --hover: rgba(255, 255, 255, .09);
+    --background-seen: var(--pink-transparent);
+    --background-bookmarked: var(--purple-transparent);
+    --border-alt: #4c5067;
+    --border-checkbox: var(--greySecondary);
+    --text-main: var(--white);
+    --text-button: var(--orange);
+}
+/* blurb options  */
+.kh-toggles {
+    background-color: var(--background-dropdown);
+    border-color: var(--background-dropdown);
+}
+/* remove pictures & return color to the bg */
+.marked-seen, 
+.kh-highlight-bookmarked-yes .is-bookmarked, dl.is-bookmarked, .is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.marked-seen, dl.is-bookmarked.marked-seen {
+    background-image: none !important;
+    background-color: var(--background-card) !important;
+}
+/*bg fix for kudosed*/
+.has-kudos.marked-seen, .has-kudos, 
+ dl.has-kudos.is-bookmarked,
+dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.has-kudos.marked-seen {
+  background: url("https://i.imgur.com/IZOeMAx.png") left no-repeat !important;
+    background-color: var(--background-card) !important;
+}
+/* replace pictures with pseudo-elements */
+.marked-seen:before, .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;    
+    top: 0;
+    width: 40px;
+    height: 100%;    
+}
+.marked-seen:before {
+    left: 0;
+    background-color: var(--background-seen);
+}
+.kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
+    right: 0;
+    visibility: visible;
+    background-color: var(--background-bookmarked);
+    background-image: repeating-linear-gradient(
+  135deg,
+  var(--background-bookmarked),
+  var(--background-bookmarked) 6px,
+  var(--border-alt) 2px,
+  var(--border-alt) 8px
+)
+}
+/* fix floated content */
+.reading.blurb .stats, .reading .user.module { float: none }
+.reading .user.module:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+/*border fix for new*/
+.kh-highlight-new-yes li.new-blurb {
+    border-left: 5px solid var(--purple) !important;
+}
+/*collapsed bookmarks*/
+.collapsed-blurb div.own.user.module.group {
+    margin-top: 1.5em;
+}
+
+/*settings*/
+#importexport-box {
+    border-color: var(--background-main);
+    background-color: var(--background-main);
+}
+#importexport-box .kh-setting-option {
+    color: var(--text-main);
+    border: 1px solid var(--background-secondary);
+    background-color: var(--background-main);
+}
+#importexport-box .kh-setting-option.kh-setting-option-selected {
+    background-color: var(--border-checkbox);
+    border-color: var(--border-checkbox);
+}
+#importexport-box input[type=button] {
+    color: var(--text-button);
+    border-color: var(--background-button);
+    background: var(--background-button);
+}
+#importexport-box a.kh-setting-option:hover, #importexport-box input[type=button]:hover {
+    color: var(--text-main);
+    border-color: var(--hover);
+    background-color: var(--hover);
+}
+@media screen and (max-width: 42em) {
+    .has-kudos.marked-seen, .has-kudos, dl.has-kudos.is-bookmarked,
+dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.has-kudos.marked-seen {
+        background-size: 20px !important;
+    }
+    .marked-seen:before, .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after { width: 20px }
+}
