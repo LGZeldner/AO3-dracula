@@ -68,7 +68,7 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
 )
 }
 /* fix floated content */
-.reading.blurb .stats, .reading .user.module { float: none }
+.is-bookmarked.blurb dl.stats, .reading.blurb .stats, .reading .user.module { float: none }
 .reading .user.module:after {
     content: " ";
     clear: both;
