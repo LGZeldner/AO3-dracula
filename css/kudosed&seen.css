@@ -55,6 +55,15 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
     left: 0;
     background-color: var(--background-seen);
 }
+.kh-skipped-display-placeholder .marked-seen.skipped-work:before {
+    position: initial;
+    background-color: var(--background-card);
+}
+.kh-skipped-display-placeholder .marked-seen.skipped-work {
+    border-left-color: var(--background-seen);
+    border-left-width: 40px;
+    padding-left: 0.75em !important;
+}
 .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
     right: 0;
     visibility: visible;
