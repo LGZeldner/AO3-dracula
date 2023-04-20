@@ -77,7 +77,18 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
 )
 }
 /* fix floated content */
-.is-bookmarked.blurb dl.stats, .reading.blurb .stats, .reading .user.module { float: none }
+.is-bookmarked.blurb ul.actions:last-child,
+.is-bookmarked.blurb dl.stats:last-child,
+.reading.blurb .stats,
+.reading .user.module {
+    float: none;
+}
+.is-bookmarked.blurb ul.actions:last-child li {
+    display: block;
+    float: right;
+    margin: 0;
+}
+.is-bookmarked.blurb ul.actions:last-child:after,
 .reading .user.module:after {
     content: " ";
     clear: both;
