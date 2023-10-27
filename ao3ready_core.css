@@ -33,6 +33,12 @@ li.unread.comment, #outer .reading h4.viewed, .reading h4.viewed, .dashboard .bo
 	border: 0;
 	color: #80ffea;
 }
+.announcement .thermometer .track {
+    border-radius: .25rem;
+    border-color: #ffca80;
+    background: #21222c;
+    background-image: none;
+}
 .alert .userstuff, .caution {
     background-color: #383935;   	
     color: #ffff80;
@@ -94,20 +100,7 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 }
 .preface a:hover { text-decoration: none }
 .filters input:focus+.indicator+span, a:active, a:focus img, a:focus, #header #search input:focus { outline: none }
-.announcement .thermometer .track {
-	background: #80ffea;
-	border-color: #80ffea;
-	background-image: linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
-}
-.announcement .thermometer .track {
-	background-image: -o-linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
-}
-.announcement .thermometer .track {
-	background-image: -moz-linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
-}
-.announcement .thermometer .track {
-	background-image: -webkit-linear-gradient(135deg, #80ffea 0%, #8aff80 100%);
-}
+
 #modal .content, .userstuff h3:first-of-type, .chapter.preface:first-child {
     border: 0;
     border-bottom: 0.125em solid transparent;
@@ -777,7 +770,7 @@ rect[fill="#993333"] {
 }
 .nominations .rejected, .nominations .rejected:hover, span.symbol.rejected, span.symbol.rejected:hover { background: #ff9580 }
 .nominations .unreviewed, .nominations .unreviewed:hover, span.symbol.unreviewed, span.symbol.unreviewed:hover { background: #9580ff }
-.blurb .header .heading { margin-right: 6em }
+.blurb .header .heading { margin-right: 7em }
 .blurb[class*="external"] .fandoms.heading { min-height: 1rem }
 dl.meta, .news dl.meta { padding: 0.5rem 0.5rem 0 }
 .userstuff blockquote {
