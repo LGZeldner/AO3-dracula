@@ -81,7 +81,7 @@ form fieldset dl, fieldset fieldset fieldset, .filters .group dt.bookmarker, #da
 .dropdown #small_login .footnote a { border-bottom: 0 }
 .chapter.preface:last-child { border-top: 0 }
 .action, .action:hover, label.action, label.action:hover { border-color: #21222c }
-tfoot, tfoot td, tbody tr, tbody th, tr:hover, col.name, #dashboard ul, .ui-datepicker td, #dashboard .secondary, .draft, .preface h3, .userstuff h3, .userstuff h6, .userstuff hr, hr { border-color: #4c5067 }
+tfoot, tfoot td, tbody tr, tbody th, tr:hover, col.name, #dashboard ul, .ui-datepicker td, #dashboard .secondary, .draft, .preface h3, .userstuff h3, .userstuff h6, .userstuff hr, hr, .chapter .preface { border-color: #4c5067 }
 #modal.img .content img, .picture .header, .blurb .header.module, .splash .module h3, form dt { 	
 	border-width: 0.1rem;
 	border-color: #414558;
