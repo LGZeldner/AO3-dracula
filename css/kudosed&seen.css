@@ -104,7 +104,7 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
 }
 
 /*settings*/
-#importexport-box {
+#importexport-box, #tracked-box {
     border-color: var(--background-main);
     background-color: var(--background-main);
 }
@@ -117,12 +117,12 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
     background-color: var(--border-checkbox);
     border-color: var(--border-checkbox);
 }
-#importexport-box input[type=button] {
+#importexport-box input[type=button], #tracked-box input[type=button] {
     color: var(--text-button);
     border-color: var(--background-button);
     background: var(--background-button);
 }
-#importexport-box a.kh-setting-option:hover, #importexport-box input[type=button]:hover {
+#importexport-box a.kh-setting-option:hover, #importexport-box input[type=button]:hover, #tracked-box input[type=button]:hover  {
     color: var(--text-main);
     border-color: var(--hover);
     background-color: var(--hover);
