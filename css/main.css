@@ -1,3 +1,11 @@
+/* ==UserStyle==
+@name         AO3 Yet Another Dracula (UI)
+@version      20240807.23.18
+@namespace    archiveofourown.org
+@homepageURL	https://github.com/LGZeldner/AO3-dracula
+==/UserStyle== */
+
+@-moz-document domain("archiveofourown.org"), domain("archiveofourown.com"), domain("archiveofourown.gay"), domain("archiveofourown.net"), domain("ao3.org"), domain("archive.transformativeworks.org"), domain("insecure.archiveofourown.org") {
 /*
 Table of Contents
 **0** fonts, colors, spacing
@@ -1164,8 +1172,9 @@ a:visited:hover, .blurb h4 a:visited:hover, .listbox .heading a:visited:hover, .
 }
 .actions a:visited, .action a:visited, .action:visited, span.action a:visited, .listbox .heading span.action a:visited, .pagination.actions a:visited { color: var(--text-button) }
 a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker td a:visited, .ui-datepicker td a:visited:hover, a.tag:visited, a.tag:visited:hover, .action:visited:hover, .action a:visited:hover, .actions a:visited:hover, .listbox .heading span.action a:visited:hover, span.action a:visited:hover, span.action:hover, span.action:hover a:visited, .heading a.tag:visited, .heading a.tag:visited:hover { color: var(--text-main) }
-/**Extra** background fixes for dracula theme for AO3 & Kudosed and Seen history*/
 
+/**Extra** background fixes for dracula theme for AO3 & Kudosed and Seen history, AO3 Tracking userscripts*/
+/* blurb options  */
 .kh-toggles {
     background-color: var(--background-dropdown);
     border-color: var(--background-dropdown);
@@ -1199,6 +1208,15 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
     left: 0;
     background-color: var(--background-seen);
 }
+.kh-skipped-display-placeholder .marked-seen.skipped-work:before {
+    position: initial;
+    background-color: var(--background-card);
+}
+.kh-skipped-display-placeholder .marked-seen.skipped-work {
+    border-left-color: var(--background-seen);
+    border-left-width: 40px;
+    padding-left: 0.75em !important;
+}
 .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
     right: 0;
     visibility: visible;
@@ -1212,7 +1230,18 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
 )
 }
 /* fix floated content */
-.is-bookmarked.blurb dl.stats, .reading.blurb .stats, .reading .user.module { float: none }
+.is-bookmarked.blurb ul.actions:last-child,
+.is-bookmarked.blurb dl.stats:last-child,
+.reading.blurb .stats,
+.reading .user.module {
+    float: none;
+}
+.is-bookmarked.blurb ul.actions:last-child li {
+    display: block;
+    float: right;
+    margin: 0;
+}
+.is-bookmarked.blurb ul.actions:last-child:after,
 .reading .user.module:after {
     content: " ";
     clear: both;
@@ -1228,7 +1257,7 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
 }
 
 /*settings*/
-#importexport-box {
+#importexport-box, #tracked-box {
     border-color: var(--background-main);
     background-color: var(--background-main);
 }
@@ -1241,12 +1270,12 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
     background-color: var(--border-checkbox);
     border-color: var(--border-checkbox);
 }
-#importexport-box input[type=button] {
+#importexport-box input[type=button], #tracked-box input[type=button] {
     color: var(--text-button);
     border-color: var(--background-button);
     background: var(--background-button);
 }
-#importexport-box a.kh-setting-option:hover, #importexport-box input[type=button]:hover {
+#importexport-box a.kh-setting-option:hover, #importexport-box input[type=button]:hover, #tracked-box input[type=button]:hover  {
     color: var(--text-main);
     border-color: var(--hover);
     background-color: var(--hover);
@@ -1259,6 +1288,7 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
     }
     .marked-seen:before, .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after { width: 20px }
 }
+
 
 
 /**8** media rules */
@@ -1517,3 +1547,4 @@ dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.
     #modal .content { padding: var(--spacing-3) }
     #main.errors { background-position: center 75% }
   }
+}
