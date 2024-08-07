@@ -295,7 +295,7 @@ ui-datepicker-div a.ui-datepicker-prev.ui-corner-all, #ui-datepicker-div a.ui-da
     border-radius: 20px;  
 }
 #modal div.content::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, .09)}
-.actions a, .actions a:link, .action a, a.action, .action:link, .actions input[type="submit"], input[type="submit"], .announcement input[type="submit"], button, .announcement .action, span.question, span.delete a, .filters .footnote a, #ui-datepicker-div a.ui-datepicker-prev.ui-corner-all, #ui-datepicker-div a.ui-datepicker-next.ui-corner-all, .tags a[data-remote="true"], #show_signups, #hide_signups {
+.actions a, .actions a:link, .action a, a.action, .action:link, .actions input[type="submit"], .actions input[type="button"], input[type="submit"], .announcement input[type="submit"], button, .announcement .action, span.question, span.delete a, .filters .footnote a, #ui-datepicker-div a.ui-datepicker-prev.ui-corner-all, #ui-datepicker-div a.ui-datepicker-next.ui-corner-all, .tags a[data-remote="true"], #show_signups, #hide_signups {
 	background: rgba(255,202,128,.1);
 	color: #ffca80;
 	border-color: #383435;
@@ -304,7 +304,7 @@ ui-datepicker-div a.ui-datepicker-prev.ui-corner-all, #ui-datepicker-div a.ui-da
 	box-shadow: none;
 	transition: none;
 }
-.actions a:focus, .actions input[type="submit"]:focus, .actions a:active, .action:focus, .action a:focus, .delete a:focus, #login .open a:focus {
+.actions a:focus, .actions input[type="submit"]:focus, .actions input[type="button"]:focus, .actions a:active, .action:focus, .action a:focus, .delete a:focus, #login .open a:focus {
     background: #383435;
 	color: #ffca80;
 	border-color: #383435;
@@ -329,7 +329,7 @@ label.action > a, label.action>a:link {
 }
 .announcement input[type="submit"], .announcement .action { background: #383435 }
 #header .actions a:hover, #header .actions a:focus, #header .dropdown:hover > a, #header .dropdown a:hover, #header .dropdown .menu a:hover, #header .dropdown .menu a:focus, #header #search .button:hover, .autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected, .ui-datepicker tr:hover, .ui-datepicker td:hover,
-.splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus, .question a:hover, .actions a:hover, .actions input[type="submit"]:hover, .heading .actions a:hover, .heading span.actions a:hover, a.action:hover, .action:link:hover, .action a:link:hover, .action a:hover, .navigation a:hover, .submit a:hover, input[type="submit"]:hover, button:hover, .announcement input[type="submit"]:hover, .announcement .action:hover, span.question:hover,  tr:hover, td:hover, tbody th:hover, #dashboard a:hover, .filters .footnote a:hover, span.delete a:hover, #ui-datepicker-div a.ui-datepicker-prev.ui-corner-all:hover, #ui-datepicker-div a.ui-datepicker-next.ui-corner-all:hover, .tags a[data-remote="true"]:hover, #show_signups:hover, #hide_signups:hover, #modal.img .footer, #login .open a:hover {
+.splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus, .question a:hover, .actions a:hover, .actions input[type="submit"]:hover, .actions input[type="button"]:hover, .heading .actions a:hover, .heading span.actions a:hover, a.action:hover, .action:link:hover, .action a:link:hover, .action a:hover, .navigation a:hover, .submit a:hover, input[type="submit"]:hover, button:hover, .announcement input[type="submit"]:hover, .announcement .action:hover, span.question:hover,  tr:hover, td:hover, tbody th:hover, #dashboard a:hover, .filters .footnote a:hover, span.delete a:hover, #ui-datepicker-div a.ui-datepicker-prev.ui-corner-all:hover, #ui-datepicker-div a.ui-datepicker-next.ui-corner-all:hover, .tags a[data-remote="true"]:hover, #show_signups:hover, #hide_signups:hover, #modal.img .footer, #login .open a:hover {
     background: rgba(255, 255, 255, .09);
 	color: #f8f8f2;
 	border-color: #35363F;
