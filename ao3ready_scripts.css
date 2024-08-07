@@ -1,0 +1,95 @@
+/**Extra** background fixes for dracula theme for AO3 & Kudosed and Seen history, AO3 Tracking userscripts*/
+.kh-toggles {
+    background-color: #35363F;
+    border-color: #35363F;
+}
+.marked-seen, 
+.kh-highlight-bookmarked-yes .is-bookmarked, dl.is-bookmarked, .is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.marked-seen, dl.is-bookmarked.marked-seen {
+    background-image: none !important;
+    background-color: #282a36 !important;
+}
+.has-kudos.marked-seen, .has-kudos, 
+ dl.has-kudos.is-bookmarked,
+dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, 
+.kh-highlight-bookmarked-yes .is-bookmarked.has-kudos.marked-seen {
+  background: url("https://i.imgur.com/IZOeMAx.png") left no-repeat !important;
+    background-color: #282a36 !important;
+}
+.marked-seen:before, .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;    
+    top: 0;
+    width: 40px;
+    height: 100%;    
+}
+.marked-seen:before {
+    left: 0;
+    background-color: rgba(255,128,191,.1);
+}
+.kh-skipped-display-placeholder .marked-seen.skipped-work:before {
+    position: initial;
+    background-color: #282a36;
+}
+.kh-skipped-display-placeholder .marked-seen.skipped-work {
+    border-left-color: rgba(255,128,191,.1);
+    border-left-width: 40px;
+    padding-left: 0.75em !important;
+}
+.kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {
+    right: 0;
+    visibility: visible;
+    background-color: rgba(149, 128, 255, 0.1);
+}
+.kh-highlight-bookmarked-yes .is-bookmarked:after,
+dl.is-bookmarked:after {
+  background-image: repeating-linear-gradient(135deg, rgba(149, 128, 255, 0.1), rgba(149, 128, 255, 0.1) 6px, #4c5067 2px, #4c5067 8px);
+}
+.is-bookmarked.blurb ul.actions:last-child,
+.is-bookmarked.blurb dl.stats:last-child,
+.reading.blurb .stats,
+.reading .user.module {
+    float: none;
+}
+.is-bookmarked.blurb ul.actions:last-child li {
+    display: block;
+    float: right;
+    margin: 0;
+}
+.is-bookmarked.blurb ul.actions:last-child:after,
+.reading .user.module:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+.kh-highlight-new-yes li.new-blurb {
+    border-left: 5px solid #9580ff !important;
+}
+.collapsed-blurb div.own.user.module.group {
+    margin-top: 1.5em;
+}
+#importexport-box, #tracked-box {
+    border-color: rgb(33, 34, 44);
+    background-color: rgb(33, 34, 44);
+}
+#importexport-box .kh-setting-option {
+    color: rgb(248, 248, 242);
+    border: 1px solid #333540;
+    background-color: rgb(33, 34, 44);
+}
+#importexport-box .kh-setting-option.kh-setting-option-selected {
+    background-color: rgb(98, 103, 132);
+    border-color: rgb(98, 103, 132);
+}
+#importexport-box input[type=button], #tracked-box input[type=button] {
+    color: #ffca80;
+    border-color: rgba(255, 202, 128, 0.1);
+    background: rgba(255, 202, 128, 0.1);
+}
+#importexport-box a.kh-setting-option:hover, #importexport-box input[type=button]:hover, #tracked-box input[type=button]:hover  {
+    color: rgb(248, 248, 242);
+    border-color: rgba(255, 255, 255, 0.09);
+    background-color: rgba(255, 255, 255, 0.09);
+}
