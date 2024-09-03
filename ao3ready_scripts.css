@@ -13,7 +13,7 @@
  dl.has-kudos.is-bookmarked,
 dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, 
 .kh-highlight-bookmarked-yes .is-bookmarked.has-kudos.marked-seen {
-  background: url("https://i.imgur.com/IZOeMAx.png") left no-repeat !important;
+    background: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/kudos_40_ui_recolor.png) left no-repeat !important;
     background-color: #282a36 !important;
 }
 .marked-seen:before, .kh-highlight-bookmarked-yes .is-bookmarked:after, dl.is-bookmarked:after {

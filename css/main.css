@@ -392,9 +392,9 @@ dd.hideme, .ui-sortable li, .ui-sortable li:hover, form.verbose legend, .verbose
 	padding:25px 0 0 25px;
 	background-size: contain;
  }
-#header .logo { background: url(https://i.imgur.com/TVDq1m8.png) 0 0/contain no-repeat }
+#header .logo { background: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/logo_84_dracula_ui_recolor.png) 0 0/contain no-repeat }
 img[title="Restricted"], .blurb h4 img[title="Restricted"] {
-    background: url(https://i.imgur.com/VCvPIxa.png) 0 0 no-repeat;
+    background: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/lock-7-32.png) 0 0 no-repeat;
     background-size: contain;
     padding: var(--spacing-4) 0 0 var(--spacing-4);
     display: inline-block;
@@ -402,10 +402,10 @@ img[title="Restricted"], .blurb h4 img[title="Restricted"] {
 }
 a[href="/users/orphan_account"] img.icon {
 	padding:100px 0 0 100px;
-    background: url(https://i.imgur.com/yWWIqpS.png) 0 0/contain no-repeat;
+    background: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/orphan-avatar_dracula_ui_recolor.png) 0 0/contain no-repeat;
 }
 p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explicit, .required-tags .rating-mature, .required-tags .rating-notrated, .required-tags .warning-no, .required-tags .rating-teen, .required-tags .category-none, .required-tags .category-femslash, .required-tags .category-gen, .required-tags .category-het, .required-tags .category-multi, .required-tags .category-other, .required-tags .category-slash, .required-tags .complete-no, .required-tags .complete-yes, .required-tags .warning-yes, .required-tags .warning-choosenotto, .required-tags .external-work, .status .count, .status .private .text, .status .public, .status .hidden, .status .rec, .index .skins .icon, .index .mystery .icon, .index .tag .icon, .index .tagset .icon, .comment .icon .visitor, .comment .icon .anonymous, .abbreviated .icon .anonymous, .abbreviated .icon .visitor, .admin .primary .icon, .skins .primary .icon, .tag .primary .icon, .tagset .primary .icon, a.rss span, #symbols-key dl dt img, #bookmark-symbols-key dt img { 
-    background-image: url(https://i.imgur.com/u7bOQEy.png); 
+    background-image: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/imageset_dracula_ui_recolor.png); 
     background-size: auto;
 }
 #bookmark-symbols-key dt img[alt="Rec"] { background-position: -100px -50px }
@@ -443,16 +443,16 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 #symbols-key dl dt img[alt="globe"] { background-position: -75px -50px }
 #symbols-key dl dt img[alt*="stop"] { background-position: -100px -25px }
 #symbols-key dl dt img[alt="ticky"] { background-position: -175px -25px }
-.icon[src="/images/skins/iconsets/default/icon_user.png"], .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"], #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"] { background-image: url(https://i.imgur.com/T0jO3kZ.png) }
+.icon[src="/images/skins/iconsets/default/icon_user.png"], .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"], #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"] { background-image: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/default-user_ui_recolor.png) }
 .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 100px 0 0 100px }
 .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 55px 0 0 55px }
 .abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 75px 0 0 75px }
 #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"] { padding: 1.786em 0 0 1.786em }
 .required-tags .rating-notrated, .required-tags .category-none, .required-tags .warning-no { background-color: var(--background-secondary) }
-#main.errors { background-image: url(https://i.imgur.com/wMaGVxV.png) }
-#main.error-502 { background-image: url(https://i.imgur.com/5GAW3TW.png) }
-#main.error-503-maintenance { background-image: url(https://i.imgur.com/7Glgcp7.png) }
-#main.session { background-image: url(https://i.imgur.com/CXD6gn5.png) }
+#main.errors { background-image: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/sadface_dracula_ui_recolor.png) }
+#main.error-502 { background-image: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/ao3-502_dracula_ui_recolor.png) }
+#main.error-503-maintenance { background-image: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/logo-ruby_dracula_ui_recolor.png) }
+#main.session { background-image: url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/logo_big_dracula_ui_recolor.png) }
 
 /*
 *< float clearfix hack */
@@ -804,7 +804,7 @@ select, select:focus {
 	line-height: 1.286;
 	text-overflow: ellipsis;
 	text-rendering: auto;
-	background: var(--background-input) url(https://i.imgur.com/5mE5hbu.png) right center no-repeat; 
+	background: var(--background-input) url(https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/select64.png) right center no-repeat; 
     background-size: contain;
     vertical-align: middle;
     border: 1px solid var(--background-input);
@@ -1191,7 +1191,7 @@ a.resp-sharing-button__link, .pagination.actions a:visited:hover, .ui-datepicker
  dl.has-kudos.is-bookmarked,
 dl.has-kudos.marked-seen.is-bookmarked, .kh-highlight-bookmarked-yes .has-kudos.is-bookmarked, 
 .kh-highlight-bookmarked-yes .is-bookmarked.has-kudos.marked-seen {
-  background: url("https://i.imgur.com/IZOeMAx.png") left no-repeat !important;
+  background: url("https://raw.githubusercontent.com/LGZeldner/AO3-dracula/master/pictures/kudos_40_ui_recolor.png") left no-repeat !important;
     background-color: var(--background-card) !important;
 }
 /* replace pictures with pseudo-elements */
